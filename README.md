@@ -17,3 +17,19 @@
 尽管通常会使用 JavaScript 来访问 DOM， 但它并不是 JavaScript 的一部分，它也可以被其他语言使用， 
 [https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model ](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model)   
 
+
+# 在HTML里面使用Javascript
+
+
+1. 页面中嵌入<script>标签
+```<html>
+<script>
+...
+</script>
+</html>```
+
+2. 链接外部文件
+```<script src="myJs.js" type=application/javascript"></script>```
+
+注意： 可以使用defer或者async属性，分别为延迟异步加载和，异步加载
+
