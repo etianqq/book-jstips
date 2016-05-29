@@ -25,12 +25,7 @@ JavaScript 是一种面向对象的动态语言，它包含类型、运算符、
 
 
 1. 页面中嵌入<script>标签
-
-<html>
-<script></script>
-</html>
-
-
+```<html><script></script></html>```
 2. 链接外部文件
 ```<script src="myJs.js" type=application/javascript"></script>```
 
