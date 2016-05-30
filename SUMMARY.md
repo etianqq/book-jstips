@@ -1,7 +1,7 @@
 # Summary
 
 * [javascript简要教程](README.md)
-   * [数据类型](ji_ben_shu_ju_lei_xing.md)
+   * [1.数据类型](ji_ben_shu_ju_lei_xing.md)
    * [运算符](yun_suan_fu.md)
    * [对象](dui_xiang.md)
    * [数组](shu_zu.md)
