@@ -7,6 +7,7 @@
    * [4.数组](shu_zu.md)
    * [5.函数](5han_shu.md)
    * 6.作用域
+   * 原型
 * [Tips](chapter1.md)
    * [什么闭包, 闭包有什么用?](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
 
