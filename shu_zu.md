@@ -14,3 +14,15 @@
 | a.splice(start, delcount[, item1[, ...[, itemN]]]) | 从 start 开始，删除 delcount 个元素，然后插入所有的 item |
 | a.unshift([item]) | 将 item 插入数组头部，返回数组新长度（考虑 undefined |
 
+ES5中添加的迭代方法有：
+
+| 方法名称 | 描述 |
+| -- | -- |
+| every | 每一项为true，返回true |
+| filter | 返回原数组的一个子集 |
+| forEach | 遍历数组，改变原数组 |
+| map | 遍历数组，根据条件返回**新数组** |
+| some | 有一项为true，返回true |
+
+
+
