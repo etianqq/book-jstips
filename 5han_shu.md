@@ -44,11 +44,12 @@ var func = function(){...}
 (function(){...}())
 
 ####作用域链
-
 ![](1.png)
 
 
 
+
+![](2.jpg)
 
 
 
