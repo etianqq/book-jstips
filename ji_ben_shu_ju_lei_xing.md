@@ -20,6 +20,3 @@ Tips:
 2. JavaScript 允许声明变量但不对其赋值，一个未被赋值的变量就是 undefined 类型。还有一点需要说明的是，undefined 实际上是一个不允许修改的常量。
 3. 简单类型的数据不要使用对象形式赋值。比如:```var a = 5;//ok  var a = Number(5); // not ok```
 因为如果用对象的形式声明简单类型，会产生一个对应的实例，而，如果不手动销毁这个实例，会占用内存。
-
-
-[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
