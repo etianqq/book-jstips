@@ -55,6 +55,8 @@ JavaScript中，变量的作用域有全局作用域（window）和局部作用�
 
 Tips: ```for(var i = 0; i<len; i++){}```
 
+```{for(let i = 0; i<len; i++){}}```
+
 ####作用域链
 ![](1.png)
 
