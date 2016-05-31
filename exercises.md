@@ -19,3 +19,16 @@
 >bar();	//	ReferenceError
 >
 >var foo=function bar()	{...}
+
+第三题
+
+>var elems = document.getElementsByTagName('a');
+>
+>for (var i = 0; i < 10; i++) {  
+>
+> elems[i].addEventListener('click', function (e) {
+> 
+>   **alert('I am link #' + i);**
+>        
+>    }, 'false');
+>}
