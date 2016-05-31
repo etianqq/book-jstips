@@ -9,8 +9,6 @@ function MyFunc(){...}
 
 var func = function MyFunc(){...}
 
-自执行函数: ```(function(){...}())```
-
 
 > 函数声明和函数表达式最重要的区别就是它们的名称标识符会绑定在何处？
 
@@ -18,7 +16,7 @@ var func = function MyFunc(){...}
 
 >函数表达式：被绑定在函数表达式自身的函数中
 
-
+Tips: 自执行函数: ```(function(){...}()) or (function(){...})()```
 
 ####arguments
 函数实际上是访问了函数体中一个名为 arguments 的内部对象，这个对象就如同一个**类似于数组**的对象一样，包括了所有被传入的参数。
