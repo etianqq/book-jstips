@@ -36,15 +36,15 @@
     var Something={	
 		cool:function(){
 			this.greeting="Hello World";
-			this.count=this.count?this.count+1:1;	
+			this.count=this.count ? this.count+1 : 1;	
 			}
     };
     Something.cool();	
-    Something.greeting;	//"Hello World"
+    Something.greeting; //"Hello World"
     Something.count;	//1
     var Another={
 		cool:function(){
-                Something.cool.call(	this	);	
+                Something.cool.call(this);
 			}
     };
     Another.cool();
