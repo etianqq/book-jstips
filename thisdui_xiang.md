@@ -4,7 +4,7 @@
         this.bar();
     }
     function bar(){
-    console.log(this.a);
+        console.log(this.a);
     }
     foo();	// ReferenceError: a is not defined
 
