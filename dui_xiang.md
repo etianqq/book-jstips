@@ -60,7 +60,7 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     };
     Object.getOwnPropertyDescriptor(	myObject,	"a"	);	
     //	{
-    //	   value:	2,
+    //	    value:	2,
     //		writable:	true,
     //		enumerable:	true,
     //		configurable:	true
