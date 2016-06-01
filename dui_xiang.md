@@ -74,10 +74,11 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     var myObject = {};
     Object.defineProperty( myObject,"a",{
 			value: 2,
-			writable: true,	
+			writable: false,	
 			configurable: true,	
 			enumerable: true
     }	);	
+    myObject.a = 3;
     myObject.a;	// 2
 
 Tips:
