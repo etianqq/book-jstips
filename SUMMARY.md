@@ -6,10 +6,10 @@
    * [3.对象](dui_xiang.md)
    * [4.数组](shu_zu.md)
    * [5.函数](5han_shu.md)
+   * [this对象](thisdui_xiang.md)
    * [6.原型](6yuan_xing.md)
 * [Tips](chapter1.md)
    * [闭包](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
-   * [this对象](thisdui_xiang.md)
    * [类：面向对象编程](class.md)
    * [练习题](exercises.md)
 
