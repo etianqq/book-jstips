@@ -27,9 +27,9 @@
     }
     var myCar = new Car();
     myCar.drive();
-    //	Turning on my engine!
-    //	Steering and moving forward!
-    //	Rolling on all 4 wheels!
+    // Turning on my engine!
+    // Steering and moving forward!
+    // Rolling on all 4 wheels!
     
     
 ####隐式混入
@@ -48,5 +48,5 @@
 			}
     };
     Another.cool();
-    Another.greeting;	// "Hello World"
+    Another.greeting; // "Hello World"
     Another.count;	// 1 (count不是共享状态）
