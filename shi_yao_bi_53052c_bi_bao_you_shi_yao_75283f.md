@@ -1,7 +1,7 @@
 
  闭包是在某个作用域内定义的函数，它可以访问这个作用域内的所有变量。
 
-    functionfoo()	{
+    functionfoo(){
         var a = 2;
         function bar(){
           console.log(a);
