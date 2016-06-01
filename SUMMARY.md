@@ -9,6 +9,6 @@
    * [6.原型](6yuan_xing.md)
 * [Tips](chapter1.md)
    * [什么闭包, 闭包有什么用?](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
-   * [This对象](thisdui_xiang.md)
+   * [this对象](thisdui_xiang.md)
    * [练习题](exercises.md)
 
