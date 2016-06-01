@@ -35,8 +35,7 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
 不具有可写性。如果属性同时具有getter和setter方法，那么它是一个读/写属性；如果只有getter，那就是只读属性；如果只有setter，那就是只写属性。
 
 
->     var p = {
-> 
+     var p = {
         x: 1,  
         y: 2,
         get r() {
@@ -56,8 +55,17 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     console.log(p.r);  //12
     console.log(p.s);  //32
 
-
----
+####属性描述符
+    var myObject={	
+		a:2
+    };
+    Object.getOwnPropertyDescriptor(	myObject,	"a"	);	
+    //	{
+    //	   value:	2,
+    //		writable:	true,
+    //		enumerable:	true,
+    //		configurable:	true
+    //	}
 
 
 Tips:
