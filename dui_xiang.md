@@ -87,5 +87,10 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     }	);	
     myObject.a = 3;
     myObject.a;	// 2
-使用场景：声明一个常量
+使用场景，比如声明一个常量。
 
+```Object.seal(..)```会创建一个“密封”的对象，这个方法实际上会在一个现有对象上
+用Object.preventExtensions(..)并把所有现有属性标记为configurable:false。
+
+```Object.freeze(..)```会创建一个冻结对象，这个方法实际上会在一个现有对象上调
+用Object.seal(..)并把所有“数据访问”属性标记为writable:false，这样就无法修改它们的值。
