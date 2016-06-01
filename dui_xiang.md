@@ -63,9 +63,9 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     Object.getOwnPropertyDescriptor(myObject,"a");	
     //	{
     //	  value:	2,
-    //      writable:	true,
-    //	  enumerable:	true, //，修改一个不可配置的属性描述符会出错
-    //	  configurable:	true
+    //      writable:	true,  // 是否可修改
+    //	  enumerable:	true, //是否在for...in循环中出现
+    //	  configurable:	true //修改一个不可配置的属性描述符会出错
     //	}
     
 在创建普通属性时属性描述符会使用默认值，我们也可以使用Object.defineProperty(..)来添加
