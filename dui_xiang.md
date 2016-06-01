@@ -55,6 +55,8 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     console.log(p.s);  //32
 
 ####属性描述符
+从ES5开始，所有的属性都具备了属性描述符。
+
     var myObject={	
 		a:2
     };
@@ -65,7 +67,18 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     //		enumerable:	true,
     //		configurable:	true
     //	}
+    
+在创建普通属性时属性描述符会使用默认值，我们也可以使用Object.defineProperty(..)来添加
+一个新属性或者修改一个已有属性（如果它是configurable）并对特性进行设置。
 
+    var myObject = {};
+    Object.defineProperty( myObject,"a",{
+			value: 2,
+			writable: true,	
+			configurable: true,	
+			enumerable: true
+    }	);	
+    myObject.a;	// 2
 
 Tips:
 
