@@ -1,8 +1,15 @@
-# 对象
+##对象
 ####创建对象
 JavaScript 中的对象可以简单理解成“名称-值”对，有两种简单方法可以创建一个空对象：
 
 1.```var obj = new Object();```
+
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+    var person = new Person("nicole", 24);
+    console.log(person.name);  // 'nicole'
 
 2.```var obj = {}; // 对象字面量（object literal）```
 
@@ -80,12 +87,5 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     }	);	
     myObject.a = 3;
     myObject.a;	// 2
+使用场景：声明一个常量
 
-Tips:
-
-    function Person(name, age) {
-      this.name = name;
-      this.age = age;
-    }
-    var person = new Person("nicole", 24);
-    console.log(person.name);  // 'nicole'
