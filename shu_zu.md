@@ -24,5 +24,10 @@ ES5中添加的迭代方法有：
 | map | 遍历数组，根据条件返回**新数组** |
 | some | 有一项为true，返回true |
 
+ES6遍历数组值的方法：```for...of```
 
-
+    var myArray = [1,2,3];
+    for (var v of myArray){	
+        console.log(v);
+    }
+    //1, 2, 3
