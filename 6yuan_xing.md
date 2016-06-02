@@ -33,7 +33,7 @@ JavaScript会在两个对象之间创建一个**关联**，这样一个对象就
 		this.name = name;
     }
     Foo.prototype.myName = function()	{	
-		retur this.name;
+		return this.name;
     };	
     var a = new Foo("a");
     var b = new Foo("b");	
