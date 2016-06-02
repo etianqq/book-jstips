@@ -28,3 +28,14 @@ http://www.jb51.net/article/30750.htm
 但是在JavaScript中，并没有类似的复制机制。
 
 JavaScript会在两个对象之间创建一个**关联**，这样一个对象就可以通过委托访问另一个对象的属性和函数
+
+    function Foo(name)	{	
+		this.name = name;
+    }
+    Foo.prototype.myName = function()	{	
+		retur this.name;
+    };	
+    var a = new Foo("a");
+    var b = new	Foo("b");	
+    a.myName();	//"a"
+    b.myName();	//"b"
