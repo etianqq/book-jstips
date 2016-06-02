@@ -12,9 +12,6 @@
 
 所有的对象在默认的情况下都有一个原型，因为原型本身也是对象，所以每个原型自身又有一个原型(只有一种例外，默认的对象原型在原型链的顶端)
 
-http://blog.jobbole.com/9648/
-http://www.jb51.net/article/30750.htm
-
 ####prototype
 
     function Foo(){}
