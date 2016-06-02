@@ -36,6 +36,6 @@ JavaScript会在两个对象之间创建一个**关联**，这样一个对象就
 		retur this.name;
     };	
     var a = new Foo("a");
-    var b = new	Foo("b");	
+    var b = new Foo("b");	
     a.myName();	//"a"
     b.myName();	//"b"
