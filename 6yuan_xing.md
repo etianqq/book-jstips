@@ -14,3 +14,11 @@
 
 http://blog.jobbole.com/9648/
 http://www.jb51.net/article/30750.htm
+
+####prototype
+
+    function Foo(){}
+    Foo.prototype; // 这个对象是在调用new Foo()时创建的，最后会被关联到这个“Foo.prototype”对象上
+    Object.getPrototypeOf(a) === Foo.prototype;	//true
+    
+####原型继承
