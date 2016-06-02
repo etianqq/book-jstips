@@ -21,7 +21,7 @@ http://www.jb51.net/article/30750.htm
     Foo.prototype; // 这个对象是在调用new Foo()时创建的，最后会被关联到这个“Foo.prototype”对象上
     Object.getPrototypeOf(a) === Foo.prototype;	//true
     
-####原型继承
+####原型继承 (通过原型链实现)
 在面向类的语言中，类可以被复制（或者说实例化）多次，就像用模具制作东西一样。一个类就意味着“把类的行为复制到物理对象
 中”，对于每一个新实例来说都会重复这个过程。
 
