@@ -40,3 +40,4 @@ JavaScript会在两个对象之间创建一个**关联**，这样一个对象就
     a.myName();	//"a"
     b.myName();	//"b"
     
+![](prototype.png)
