@@ -44,6 +44,24 @@ JavaScript会在两个对象之间创建一个**关联**，这样一个对象就
 
 如果在对象上没有找到需要的属性或者方法引用，引擎就会继续在[[Prototype]]关联的对象上进行查找。同理，如果在后者中也没有找到需要的引用就会继续查找它的[[Prototype]]，以此类推。
 
+一个典型的通过原型链实现继承的例子：
 
+    function Foo(name)	{	
+		this.name = name;
+    }
+    Foo.prototype.myName = function(){	
+		return this.name;
+    };
+     function Bar(name,label){	
+		Foo.call(this,name);	
+		this.label = label;
+    }
+    Bar.prototype = Object.create(Foo.prototype);
+    Bar.prototype.myLabel = function(){	
+		return this.label;
+    };
+    var a = new Bar("a","obj a");
+    a.myName(); //"a"	
+    a.myLabel(); //"obj a"
 ![](prototype.png)
 
