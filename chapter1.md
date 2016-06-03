@@ -1,3 +1,3 @@
-# knowledge
+# 知识点
 
-knowledge
+后续是一些比较有趣，实用的javascript知识点。
