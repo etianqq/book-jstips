@@ -1,6 +1,7 @@
 # Summary
 
 * [javascript简要教程](README.md)
+   * 概述
    * [1.数据类型](ji_ben_shu_ju_lei_xing.md)
    * [2.运算符](yun_suan_fu.md)
    * [3.对象](dui_xiang.md)
@@ -8,7 +9,6 @@
    * [5.函数](5han_shu.md)
    * [6.this对象](thisdui_xiang.md)
    * [7.原型](6yuan_xing.md)
-   * 概述
 * [Tips](chapter1.md)
    * [闭包](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
    * [类：面向对象编程](class.md)
