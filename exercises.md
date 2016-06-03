@@ -10,8 +10,8 @@
 
 第二题
 
-    foo();	//	TypeError
-    bar();	//	ReferenceError
+    foo();	// TypeError
+    bar();	// ReferenceError
     var foo=function bar()	{...}
 
 第三题
