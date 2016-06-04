@@ -1,6 +1,6 @@
 # Summary
 
-* [javascript简要教程](README.md)
+* [javascript简明教程](README.md)
    * [前言](gai_shu.md)
    * [1.数据类型](ji_ben_shu_ju_lei_xing.md)
    * [2.运算符](yun_suan_fu.md)
