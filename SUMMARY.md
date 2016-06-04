@@ -13,7 +13,7 @@
    * [闭包](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
    * [模块](module.md)
    * [类：面向对象编程](class.md)
+   * 心得
    * [动态作用域](dong_tai_zuo_yong_yu.md)
    * [练习题](exercises.md)
-   * 心得
 
