@@ -29,5 +29,7 @@ JavaScript 是一种面向对象的动态语言，它包含类型、运算符、
 
 
 注意： 可以使用defer或者async属性，分别为延迟异步加载和，异步加载
-defer支持情况：除了Opera Mini浏览器，其他主流都已经支持
-async支持情况：除了Opera Mini, IE8和IE8以下的浏览器，，其他主流都已经支持
+
+* defer支持情况：除了Opera Mini浏览器，其他主流都已经支持
+
+* async支持情况：除了Opera Mini, IE8和IE8以下的浏览器，，其他主流都已经支持
