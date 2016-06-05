@@ -8,7 +8,7 @@
    * [4.对象](js_part1_object.md)
    * [5.函数](js_part1_function.md)
    * [6.this对象](js_part1_this.md)
-   * [7.原型](6yuan_xing.md)
+   * [7.原型](js_part1_prototype.md)
 * [Tips](chapter1.md)
    * [闭包](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
    * [模块](module.md)
