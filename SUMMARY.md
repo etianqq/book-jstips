@@ -10,7 +10,7 @@
    * [6.this对象](js_part1_this.md)
    * [7.原型](js_part1_prototype.md)
 * [Tips](js_part2.md)
-   * [闭包](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
+   * [闭包](js_part2_closure.md)
    * [模块](module.md)
    * [类：面向对象编程](class.md)
    * [动态作用域](dong_tai_zuo_yong_yu.md)
