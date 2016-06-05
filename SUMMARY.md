@@ -7,7 +7,7 @@
    * [3.数组](js_part1_array.md)
    * [4.对象](js_part1_object.md)
    * [5.函数](js_part1_function.md)
-   * [6.this对象](thisdui_xiang.md)
+   * [6.this对象](js_part1_this.md)
    * [7.原型](6yuan_xing.md)
 * [Tips](chapter1.md)
    * [闭包](shi_yao_bi_53052c_bi_bao_you_shi_yao_75283f.md)
