@@ -14,6 +14,6 @@
    * [模块](js_part2_module.md)
    * [类：面向对象编程](js_part2_OO.md)
    * [词法作用域](js_part2_scope.md)
-   * [心得](xin_de.md)
+   * [心得](js_part2_my_study.md)
    * [练习题](exercises.md)
 
