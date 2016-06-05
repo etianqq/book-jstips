@@ -37,7 +37,7 @@ JavaScript会在两个对象之间创建一个**关联**，这样一个对象就
     a.myName();	//"a"
     b.myName();	//"b"
     
-原型链：
+####原型链
 
 如果在对象上没有找到需要的属性或者方法引用，引擎就会继续在[[Prototype]]关联的对象上进行查找。同理，如果在后者中也没有找到需要的引用就会继续查找它的[[Prototype]]，以此类推。
 
@@ -60,7 +60,6 @@ JavaScript会在两个对象之间创建一个**关联**，这样一个对象就
     var a = new Bar("a","obj a");
     a.myName(); //"a"	
     a.myLabel(); //"obj a"
-![](prototype.png)
 
 ![](prototype2.png)
 
