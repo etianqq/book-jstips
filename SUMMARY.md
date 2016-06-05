@@ -3,7 +3,7 @@
 * [javascript简明教程](README.md)
    * [前言](js_part1_intro.md)
    * [1.数据类型](js_part1_dataType.md)
-   * [2.运算符](yun_suan_fu.md)
+   * [2.运算符](js_part1_operator.md)
    * [3.对象](dui_xiang.md)
    * [4.数组](shu_zu.md)
    * [5.函数](5han_shu.md)
