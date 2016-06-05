@@ -6,7 +6,7 @@
    * [2.运算符](js_part1_operator.md)
    * [3.数组](js_part1_array.md)
    * [4.对象](js_part1_object.md)
-   * [5.函数](5han_shu.md)
+   * [5.函数](js_part1_function.md)
    * [6.this对象](thisdui_xiang.md)
    * [7.原型](6yuan_xing.md)
 * [Tips](chapter1.md)
