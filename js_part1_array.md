@@ -23,6 +23,7 @@ ES5中添加的迭代方法有：
 | forEach | 遍历数组，改变原数组 |
 | map | 遍历数组，根据条件返回**新数组** |
 | some | 有一项为true，返回true |
+| splice | 新元素替换旧元素，以此修改数组的内容 |
 | reduce| 收一个函数作为累加器（accumulator），数组中的每个值（从左到右）开始合并，最终为一个值 |
 
 ES6遍历数组值的方法：```for...of```
@@ -32,6 +33,16 @@ ES6遍历数组值的方法：```for...of```
         console.log(v);
     }
     //1, 2, 3
+
+####splice
+
+    array.splice(start, deleteCount[, item1[, item2[, ...]]])
+
+参数：
+
+* start: 从数组的哪一位开始修改内容。如果超出了数组的长度，则从数组末尾开始添加内容；如果是负值，则表示从数组末位开始的第几位。
+* deleteCount: 整数，表示要移除的数组元素的个数。如果 deleteCount 是 0，则不移除元素。这种情况下，至少应添加一个新元素。如果 deleteCount 大于start 之后的元素的总数，则从 start 后面的元素都将被删除（含第 start 位）。
+* itemN: 要添加进数组的元素。如果不指定，则 splice() 只删除数组元素。
 
 ####reduce
 
@@ -51,4 +62,6 @@ ES6遍历数组值的方法：```for...of```
 
 2. 如果数组仅有一个元素（无论位置如何）并且没有提供initialValue， 或者有提供initialValue但是数组为空，那么此唯一值将被返回并且callback不会被执行。
 
-参考：[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+参考：
+* [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+* [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
