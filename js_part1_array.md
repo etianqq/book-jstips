@@ -45,4 +45,10 @@ ES6遍历数组值的方法：```for...of```
   * array: 调用 reduce 的数组
 * initialValue: 作为第一次调用 callback 的第一个参数。
 
+注意：
+
+1. 如果数组为空并且没有提供initialValue， 会抛出TypeError 。
+
+2. 如果数组仅有一个元素（无论位置如何）并且没有提供initialValue， 或者有提供initialValue但是数组为空，那么此唯一值将被返回并且callback不会被执行。
+
 参考：[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
