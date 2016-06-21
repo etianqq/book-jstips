@@ -23,7 +23,6 @@ ES5中添加的迭代方法有：
 | forEach | 遍历数组，改变原数组 |
 | map | 遍历数组，根据条件返回**新数组** |
 | some | 有一项为true，返回true |
-| splice | 新元素替换旧元素，以此修改数组的内容 |
 | reduce| 收一个函数作为累加器（accumulator），数组中的每个值（从左到右）开始合并，最终为一个值 |
 
 ES6遍历数组值的方法：```for...of```
@@ -47,8 +46,7 @@ ES6遍历数组值的方法：```for...of```
 ####reduce
 
     arr.reduce(callback,[initialValue])
-    
-参数：    
+
 * callback：执行数组中每个值的函数，包含四个参数
   * previousValue:上一次调用回调返回的值，或者是提供的初始值（initialValue）
   * currentValue: 数组中当前被处理的元素
