@@ -32,3 +32,17 @@ ES6遍历数组值的方法：```for...of```
         console.log(v);
     }
     //1, 2, 3
+
+####reduce
+
+    arr.reduce(callback,[initialValue])
+    
+参数：    
+* callback：执行数组中每个值的函数，包含四个参数
+  * previousValue:上一次调用回调返回的值，或者是提供的初始值（initialValue）
+  * currentValue: 数组中当前被处理的元素
+  * index: 当前元素在数组中的索引
+  * array: 调用 reduce 的数组
+* initialValue: 作为第一次调用 callback 的第一个参数。
+
+参考：[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
