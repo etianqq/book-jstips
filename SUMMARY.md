@@ -16,6 +16,6 @@
    * [词法作用域](js_part2_scope.md)
    * [心得](js_part2_my_study.md)
    * [document.write](js_part2_documentwrite.md)
-   * 垃圾收集
+   * [垃圾收集](js_part2_garage_collection.md)
    * [练习题](js_part2_exercises.md)
 
