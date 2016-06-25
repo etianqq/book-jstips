@@ -15,6 +15,6 @@
    * [类：面向对象编程](js_part2_OO.md)
    * [词法作用域](js_part2_scope.md)
    * [心得](js_part2_my_study.md)
-   * document.write
+   * [document.write](js_part2_documentwrite.md)
    * [练习题](js_part2_exercises.md)
 
