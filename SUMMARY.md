@@ -18,5 +18,5 @@
    * [垃圾收集](js_part2_garage_collection.md)
    * [心得](js_part2_my_study.md)
 * [小结](js_part3.md)
-   * 练习题
+   * [练习题](js_part3_practise.md)
 
