@@ -19,4 +19,5 @@
         }
     }(this, function ($) {
         // your module codes
+        return MyModel;
     })
