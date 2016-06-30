@@ -19,4 +19,5 @@
    * [心得](js_part2_my_study.md)
 * [小结](js_part3.md)
    * [练习题](js_part3_practise.md)
+   * 心得
 
