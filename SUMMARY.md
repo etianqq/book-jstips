@@ -17,6 +17,6 @@
    * [document.write](js_part2_documentwrite.md)
    * [垃圾收集](js_part2_garage_collection.md)
    * [心得](js_part2_my_study.md)
-   * [练习题](js_part2_exercises.md)
+* [练习题](js_part2_exercises.md)
 * [小结](js_part3.md)
 
