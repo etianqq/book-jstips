@@ -16,6 +16,7 @@
    * [词法作用域](js_part2_scope.md)
    * [document.write](js_part2_documentwrite.md)
    * [垃圾收集](js_part2_garage_collection.md)
+   * 模块(cmd/amd)
 * [小结](js_part3.md)
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
