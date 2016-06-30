@@ -9,7 +9,7 @@
    * [5.函数](js_part1_function.md)
    * [6.this对象](js_part1_this.md)
    * [7.原型](js_part1_prototype.md)
-* [Tips](js_part2.md)
+* [进阶知识](js_part2.md)
    * [闭包](js_part2_closure.md)
    * [模块](js_part2_module.md)
    * [类：面向对象编程](js_part2_OO.md)
