@@ -18,7 +18,7 @@
    * [document.write](js_part2_documentwrite.md)
    * [垃圾收集](js_part2_garage_collection.md)
    * [js内存泄漏](js_part2_memory_leak.md)
-* [小结](js_part3.md)
+* [Tips](js_part3.md)
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
 
