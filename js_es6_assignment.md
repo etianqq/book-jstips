@@ -31,3 +31,9 @@
 
     console.log(nameA); // "Bender"
     console.log(nameB); // "Flexo"
+    
+####非对象、数组、迭代的解构类型
+1. 如果对Null/undefined使用解析赋值，会抛错。`var {error}=null;`
+2. 对其他原始类型，如boolean,number,string,nan等运用解析赋值，会得到undefined。`var {nullstr}= NaN`。
+
+####使用默认值
