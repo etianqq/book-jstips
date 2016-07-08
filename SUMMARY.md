@@ -27,4 +27,5 @@
    * [String](js_es6_string.md)
    * [函数](js_es6_function.md)
    * [非标准库对象](js_es6_non_standard_obj.md)
+   * 解构赋值
 
