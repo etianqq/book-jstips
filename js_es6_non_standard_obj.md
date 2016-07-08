@@ -25,3 +25,7 @@
 * Are key-value pairs often added or removed?
 * Do you have an arbitrary (easily changing) amount of key-value pairs?
 * Is the collection iterated?
+
+更多例子： 
+1. [https://jsfiddle.net/etianqq/7c6f875y/](https://jsfiddle.net/etianqq/7c6f875y/)
+2. https://jsfiddle.net/etianqq/y0gog6h2/
