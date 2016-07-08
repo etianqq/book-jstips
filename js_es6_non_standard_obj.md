@@ -1,6 +1,16 @@
 # 非标准库对象
 
 ####1.Map
+使用方法：
+
+    var map = new Map();  
+    map.set(window, "the global");  
+    map.set(document, "the document");  
+  
+    for (var [key, value] of map) {  
+      console.log(key + " is " + value);  
+    } 
+
 就像一个普通对象,通过key值来设置value。它与Object最大的区别是：
 * 对象含有原型对象属性prototype，但是Map没有
 * 普通对象中，key只能是string；Map的key值，可以是string或者Symbols
