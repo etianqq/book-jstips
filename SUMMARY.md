@@ -22,5 +22,5 @@
    * [document.write](js_part3_documentwrite.md)
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
-* ES6
+* [ES6](js_es6.md)
 
