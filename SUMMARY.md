@@ -25,5 +25,5 @@
 * [ES6](js_es6.md)
    * [数组](js_es6_array.md)
    * [String](js_es6_string.md)
-   * 函数
+   * [函数](js_es6_function.md)
 
