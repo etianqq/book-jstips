@@ -12,4 +12,4 @@ for...of语法：
 * 它避免了for-in的所有缺陷；
 * 与forEach()不一样，它支持break，continue和return。
 
-####迭代器对象
+####迭代器对象:Symbol
