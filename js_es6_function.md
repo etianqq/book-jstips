@@ -22,3 +22,11 @@
 * 剩余参数不能被赋值为undefined。
 
 ####2.默认参数（Default parameters）
+使用如下：
+
+    animalSentence();   //Lions and tigers and bears! Oh my!
+    animalSentence('cat', 'bear');    //Lions and cat and bear! Oh my!
+
+    function animalSentence(animals2="tigers", animals3="bears") {
+        console.log(`Lions and ${animals2} and ${animals3}! Oh my!`);
+    }
