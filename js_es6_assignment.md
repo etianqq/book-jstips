@@ -13,3 +13,11 @@
 
     var [first, second, third] = someArray;  
 
+####数组解构赋值
+
+    var [,,third] = ["foo", "bar", "baz",'test','hello'];
+    console.log(third);  //baz
+    var [arg1,...array] = ["foo", "bar", "baz",'test','hello'];
+    console.log(arg1);   //foo
+    console.log(array);   // ["bar", "baz",'test','hello']
+    
