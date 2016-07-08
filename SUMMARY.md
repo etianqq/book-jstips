@@ -28,4 +28,5 @@
    * [函数](js_es6_function.md)
    * [解构赋值](js_es6_assignment.md)
    * [非标准库对象](js_es6_non_standard_obj.md)
+   * Symbols
 
