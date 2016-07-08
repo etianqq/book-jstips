@@ -6,7 +6,7 @@
 
 使用如下：
 
-    console.log('containsAll:'+ containsAll('i like banana!',"banana", "b", "nan"));
+    console.log('containsAll:'+ containsAll('i like banana!',"banana", "b", "nan"));  // containsAll:true
     function containsAll(haystack, ...needles){
         for(var needle of needles){
             if (haystack.indexOf(needle)=== -1){
