@@ -24,5 +24,5 @@
    * [练习题](js_part3_practise.md)
 * [ES6](js_es6.md)
    * [数组](js_es6_array.md)
-   * String
+   * [String](js_es6_string.md)
 
