@@ -33,3 +33,5 @@
     
 * 取值undefined的作用等于是没有传入任何东西。因此，animalSentence(undefined, "unicorns") 返回的是 "Lions and tigers and unicorns! Oh my!"
 * 没有显式定义的默认参数等同于undefined。`function func(a=1,b)`等价于`function func(a=1,b=undefined)`
+
+####3.箭头函数（Arrow functions）
