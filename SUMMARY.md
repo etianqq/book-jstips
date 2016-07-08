@@ -26,4 +26,5 @@
    * [数组](js_es6_array.md)
    * [String](js_es6_string.md)
    * [函数](js_es6_function.md)
+   * 非标准库对象
 
