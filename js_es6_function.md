@@ -35,3 +35,19 @@
 * 没有显式定义的默认参数等同于undefined。`function func(a=1,b)`等价于`function func(a=1,b=undefined)`
 
 ####3.箭头函数（Arrow functions）
+可以省略function, return（某些情况下）,括号和分号。
+
+    // ES5  
+    var total = values.reduce(function (a, b) {  
+      return a + b;  
+    }, 0);  
+    
+    // ES6  
+    var total = values.reduce((a, b) => a + b, 0); 
+    
+    setTimeout(()=> {
+        console.log(this.name);
+    }, 100);
+    
+**箭头函数没有自己的this值，其this值是通过继承其它传入对象而获得的。**
+
