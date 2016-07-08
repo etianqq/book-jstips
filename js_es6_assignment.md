@@ -37,3 +37,34 @@
 2. 对其他原始类型，如boolean,number,string,nan等运用解析赋值，会得到undefined。`var {nullstr}= NaN`。
 
 ####使用默认值
+      
+      var [missing = true] = []; // missing -> true
+      var {message:msg = 'hello'} = {}; // msg -> 'hello'
+      
+####解构的实际应用
+#####从CommonJS的模块中导入接口名
+当导入一些CommonJS的模块时，非常常见的情况是模块的接口功能比你实际需求的多许多。通过解构的方式，你可以明确你需要的那部分，并且可以防止多余的接口名污染你的命名空间：
+
+      const { SourceMapConsumer, SourceNode } = require("source-map");  
+      
+#####函数参数定义
+作为开发人员，我们经常把一个对象用作函数的参数。这个对象具有很多的属性，以便暴露出更多便于我们使用的API，从而无需迫使我们的开发者去记住大量独立参数的顺序。我们对参数对象使用解构赋值，这样，在访问对象属性时，便可以避免重复调用这一参数对象，示例代码如下：
+
+      function removeBreakpoint({ url, line, column }) {  
+        // ...  
+      }
+      
+#####配置对象参数
+配置对象或是对象的属性已经有了合理的默认值时，如下：
+
+    jQuery.ajax = function (url, {  
+      async = true,  
+      beforeSend = noop,  
+      cache = true,  
+      complete = noop,  
+      crossDomain = false,  
+      global = true,  
+      // ... more config  
+    }) {  
+      // ... do stuff  
+    }; 
