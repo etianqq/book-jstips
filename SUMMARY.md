@@ -17,6 +17,7 @@
    * [词法作用域](js_part2_scope.md)
    * [垃圾收集](js_part2_garage_collection.md)
    * [js内存泄漏](js_part2_memory_leak.md)
+   * 柯里化
 * [Tips](js_part3.md)
    * [为什么用事件委托](js_part3_event_delegate.md)
    * [document.write](js_part3_documentwrite.md)
