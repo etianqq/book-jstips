@@ -67,3 +67,11 @@ ES6遍历数组值的方法：```for...of```
 ####isArray
 判断对象是否为数字``Array.isArray(myArray)``
 
+Polyfill:
+
+    if(typeof Array.isArray === 'undefined'){
+      Array.isArray = function(arg){
+      return Object.prototype.toString.call(arg) === '[object Array]';
+      }
+    }
+
