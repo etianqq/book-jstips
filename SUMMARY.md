@@ -31,6 +31,7 @@
    * [迭代器模式](js-design-iterator.md)
    * [装饰器模式](js-design-decorator.md)
    * [策略模式](js-design-stratage.md)
+   * 外观模式
 * [Tips](js_part3.md)
    * [为什么用事件委托](js_part3_event_delegate.md)
    * [document.write](js_part3_documentwrite.md)
