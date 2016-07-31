@@ -30,7 +30,7 @@
    * [工厂模式](js-design-factory.md)
    * [迭代器模式](js-design-iterator.md)
    * [装饰器模式](js-design-decorator.md)
-   * [策略模式](js-design-stratage.md)
+   * [策略模式](js-design-strategy.md)
    * [外观模式](js-design-appearance.md)
    * [代理模式](js-design-pattern.md)
    * [中介者模式](js-pattern-mediator.md)
