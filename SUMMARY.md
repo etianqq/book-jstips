@@ -32,4 +32,5 @@
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
 * [设计模式](js_design.md)
+   * 工厂模式
 
