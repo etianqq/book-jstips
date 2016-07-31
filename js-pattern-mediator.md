@@ -1,3 +1,5 @@
 # 中介者模式
 
 几个对象之间不直接通话，而是通过一个中介者进行通信，从而促进形成宋耦合。
+
+例子： [http://www.jspatterns.com/book/7/mediator.html](http://www.jspatterns.com/book/7/mediator.html)
