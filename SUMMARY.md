@@ -27,7 +27,7 @@
    * [非标准库对象](js_es6_non_standard_obj.md)
    * [Symbols](js_es6_symbols.md)
 * [设计模式](js_design.md)
-   * 工厂模式
+   * [工厂模式](js-design-factory.md)
 * [Tips](js_part3.md)
    * [为什么用事件委托](js_part3_event_delegate.md)
    * [document.write](js_part3_documentwrite.md)
