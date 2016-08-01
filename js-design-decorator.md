@@ -54,6 +54,7 @@
             }
         };
 
+        // usage
         var sale = new Sale(100);
         sale = sale.decorate('fedtax');
         sale = sale.decorate('quebec');
