@@ -15,7 +15,7 @@
 
 > Both document.write and document.writeln method should output text into an unready (open) document.
 
-当页面加载完成，文档流关闭。此时再调用```document.write()```，会先清楚文档内容，然后写入新的内容。原文为：
+当页面加载完成，文档流关闭。此时再调用```document.write()```，会先清除文档内容，然后写入新的内容。原文为：
 > When the page finishes loading, the document becomes closed. An attempt to document.write in it will cause the contents to be erased.
 
 * 如果用```document.write()```来加载JS文件，那么会阻塞页面渲染。
