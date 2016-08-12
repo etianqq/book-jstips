@@ -40,5 +40,5 @@
    * [document.write](js_part3_documentwrite.md)
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
-   * 变量提升
+   * [变量提升](js-tips-variable.md)
 
