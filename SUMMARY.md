@@ -38,7 +38,7 @@
 * [Tips](js_part3.md)
    * [为什么用事件委托](js_part3_event_delegate.md)
    * [document.write](js_part3_documentwrite.md)
-   * [变量提升](js-tips-variable.md)
+   * [变量提升](js-part3-variable.md)
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
 
