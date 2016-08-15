@@ -11,6 +11,7 @@
    * [7.原型](js_part1_prototype.md)
    * [8.操作符](js_part1_operator.md)
 * [进阶知识点](js_part2.md)
+   * 变量和作用域
    * [闭包](js_part2_closure.md)
    * [模块](js_part2_module.md)
    * [模块(cmd/amd)](js_part3_modul_cmd_amd.md)
@@ -19,7 +20,6 @@
    * [垃圾收集](js_part2_garage_collection.md)
    * [js内存泄漏](js_part2_memory_leak.md)
    * [柯里化](js_part2_curry.md)
-   * 变量和作用域
 * [ES6](js_es6.md)
    * [数组](js_es6_array.md)
    * [String](js_es6_string.md)
