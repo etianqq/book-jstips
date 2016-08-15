@@ -18,3 +18,37 @@
      ---------------------------------
      |    num2     |      5     |
      ----------------------------------
+     
+如果是引用类型复制，那么复制的引用地址（指针），两个变量实际上引用的是同一个对象。
+![](copy_obj.png)
+
+####3.传递参数
+**所以函数的参数都是按照值传递的。**也就是说，把函数外部的值**复制**给函数内部的参数。
+
+例子：
+      function addTen(num){
+        num += 10;
+        return num;
+      }
+      
+      var count = 20;
+      var result = addTen(count);
+      alert(count);    //20
+      alert(result);   //30
+      
+      -------------------------
+     function setName(obj){
+       obj.name = 'Nicole';
+     } 
+     var person = new Object();
+     setName(person);
+     alert(person.name);   // Nicole
+      -------------------------
+     function setName(obj) {
+       obj.name = 'Nicole';
+       obj = new Object();
+       obj.name = 'Bill';
+     }
+     var person = new Object();
+     setName(person);
+     alert(person.name); // Nicole
