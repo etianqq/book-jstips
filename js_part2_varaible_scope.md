@@ -40,7 +40,7 @@
      function setName(obj){
        obj.name = 'Nicole';
      } 
-     var person = new Object();
+     var person = new Object(); // or 'var person = new String();'
      setName(person);
      alert(person.name);   // Nicole
       -------------------------
