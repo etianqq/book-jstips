@@ -11,7 +11,7 @@
    * [7.原型](js_part1_prototype.md)
    * [8.操作符](js_part1_operator.md)
 * [进阶知识点](js_part2.md)
-   * 变量和作用域
+   * [变量和作用域](js_part2_varaible_scope.md)
    * [闭包](js_part2_closure.md)
    * [模块](js_part2_module.md)
    * [模块(cmd/amd)](js_part3_modul_cmd_amd.md)
