@@ -14,7 +14,6 @@
    * [变量和作用域](js_part2_varaible_scope.md)
    * [闭包](js_part2_closure.md)
    * [模块](js_part2_module.md)
-   * [模块(cmd/amd)](js_part3_modul_cmd_amd.md)
    * [类：面向对象编程](js_part2_OO.md)
    * [词法作用域](js_part2_scope.md)
    * [垃圾收集](js_part2_garage_collection.md)
