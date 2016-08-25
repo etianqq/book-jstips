@@ -12,3 +12,27 @@
 ||>>>|	 无符号右移	|二进制数向右移位，直接右移，对于正数，结果和>>相同，对于负数，会把负数的二进制补码当成正数的二进制码处理|
 |其它操作符|()|	 分组操作符	|主要用途：1、结合逗号操作符用于赋值。例如：var num = (5,1,4,8,0);这里num最后的值为0。2、转换为表达式。比如``eval('('+jsStr+')');`` ``(function(){}());``又比如：3、用于调用函数。比如fn();|
 ||typeof|	 类型操作符	|返回一个字符串值：Undefined类型—>'undefined'、Null类型—>'object'、Boolean类型—>'boolean'、Number类型—>‘number'、String—>'string'、内置Function对象的实例—>'function'、其它Object类型—>'object'。（有些浏览器实现略有不同）|
+
+####'&&','||' and '!'
+
+1. Logical AND (&&)	
+   
+   ```expr1 && expr2```
+   
+   Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, && returns true if both operands can be converted to true; otherwise, returns false.
+   
+   eg: 0&&1--->0, 1&&2--->2, 1&&true--->false
+   
+2. Logical OR (||)	
+ 
+    ```expr1 || expr2```	
+    
+    Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, || returns true if either operand can be converted to true; if both can be converted to false, returns false.
+    
+    1||2--->1, 0||3--->3, 4||true--->4, 0||true--->true
+    
+3. Logical NOT (!)
+
+    ```!expr```
+    
+    Returns false if its single operand can be converted to true; otherwise, returns true.|
