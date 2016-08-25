@@ -91,6 +91,15 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     }	);	
     myObject.a = 3;
     myObject.a;	// 2
+    
+如果只定义value，那么其他属性特性为false。
+
+    var o ={};
+    Object.defineProperty(o,'x'{value:1});
+    Object.getOwnPropertyDescriptor(o,'x');
+
+    ==>Object {value: 1, writable: false, enumerable: false, configurable: false}
+
 使用场景，比如声明一个常量。
 
 ```Object.seal(..)```会创建一个“密封”的对象，这个方法实际上会在一个现有对象上
