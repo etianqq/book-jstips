@@ -2,17 +2,17 @@
 
 JavaScript 中的类型应该包括这些：
 
-* Number（数字）
-* String（字符串）
-* Boolean（布尔）
+* Number（数字）       *--- 基本类型*
+* String（字符串）     *--- 基本类型*  
+* Boolean（布尔）      *--- 基本类型*
 * Symbol（符号）（第六版新增）
 * Object（对象）
   * Function（函数）
   * Array（数组）
   * Date（日期）
   * RegExp（正则表达式）
-* Null（空）
-* Undefined（未定义）
+* Null（空）          *--- 基本类型*
+* Undefined（未定义） *--- 基本类型*
 
 
 Tips: 
