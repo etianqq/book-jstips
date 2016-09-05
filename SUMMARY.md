@@ -41,4 +41,5 @@
    * [变量提升](js-part3-variable.md)
    * [心得](js_part3_summary.md)
    * [练习题](js_part3_practise.md)
+* 其他
 
