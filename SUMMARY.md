@@ -36,6 +36,7 @@
    * [中介者模式](js-pattern-mediator.md)
    * [观察者模式](js-design-observer.md)
 * 其他
+   * 客户端存储
 * [Tips](js_part3.md)
    * [为什么用事件委托](js_part3_event_delegate.md)
    * [document.write](js_part3_documentwrite.md)
