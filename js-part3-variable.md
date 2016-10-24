@@ -33,3 +33,4 @@
         alert(a);  
         a=1;  
       </script>
+      // throw ReferenceError
