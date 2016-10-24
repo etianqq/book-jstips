@@ -30,6 +30,6 @@
 
 
       <script>  
-      alert(a);  
-      a=1;  
+        alert(a);  
+        a=1;  
       </script>
