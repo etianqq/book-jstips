@@ -39,6 +39,7 @@
     * [客户端存储](js-other-storage.md)
     * [HTML5-History API](js-other-history-api.md)
     * [前端的各种转义](js-other-encoding.md)
+    * [Cookie](cookie.md)
 * [Tips](js_part3.md)
     * [为什么用事件委托](js_part3_event_delegate.md)
     * [document.write](js_part3_documentwrite.md)
