@@ -25,3 +25,8 @@ Also, presenter does not manage the incoming request traffic as controller.
 
 ######View Model
 The View Model is responsible for exposing methods, commands, and other properties that helps to maintain the state of the view, manipulate the model as the result of actions on the view, and trigger events in the view itself.
+
+######Key Points about MVVM Pattern:
+* There is many-to-one relationship between View and ViewModel means many View can be mapped to one ViewModel.
+* View has a reference to ViewModel but View Model has no information about the View.
+* Supports two-way data binding between View and ViewModel.
