@@ -26,6 +26,7 @@
   * [解构赋值](js_es6_assignment.md)
   * [非标准库对象](js_es6_non_standard_obj.md)
   * [Symbols](js_es6_symbols.md)
+  * [模块 Modules](modules.md)
 * [设计模式](js_design.md)
   * [工厂模式](js-design-factory.md)
   * [迭代器模式](js-design-iterator.md)
