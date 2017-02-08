@@ -5,22 +5,31 @@
 * 在ES6模块中，无论你是否加入“use strict;”语句，默认情况下模块都是在严格模式下运行。
 * 在模块中你可以使用import和export关键字。
 
-####基础知识
+####exports
 
 ```
-===>kittydar.js
-
-export function detectCats(canvas, options) { .. }
-export class Kittydar { ... 处理图片的几种方法 ... }
-// 这个helper函数没有被export。
-function resizeCanvas() {...}
-...
-
-===>demo.js
-import {detectCats, Kittydar} from "kittydar.js";
-...
+function cube(x) {
+  return x * x * x;
+}
+const foo = Math.PI + Math.SQRT2;
+export { cube, foo };
+--------------------------------------------
+import { cube, foo } from 'my-module';
+console.log(cube(3)); // 27
+console.log(foo);    // 4.555806215962888
 ```
+####Default exports
 
+默认导出，只能导出一个函数、一个类、一个对象字面量...
+
+```
+export default function cube(x) {
+return x * x * x;
+}
+-----------------------------------
+import cube from 'my-module';
+console.log(cube(3)); // 27
+```
 ####重命名import和export
 有时候，导出的名称会与你需要使用的其它名称产生冲突，ES6提供了重命名:
 ```
@@ -41,10 +50,6 @@ export {
    v2 as streamLatestVersion
 };
 ```
-
-####Default exports
-
-默认导出，只能导出一个函数、一个类、一个对象字面量...
 
 
 
