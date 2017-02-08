@@ -50,6 +50,8 @@ export {
    v2 as streamLatestVersion
 };
 ```
+[
+参考文章：mozilla exports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
 
 
