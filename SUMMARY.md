@@ -19,6 +19,7 @@
   * [垃圾收集](js_part2_garage_collection.md)
   * [js内存泄漏](js_part2_memory_leak.md)
   * [柯里化](js_part2_curry.md)
+  * [event loop](event-loop.md)
 * [ES6](js_es6.md)
   * [数组](js_es6_array.md)
   * [String](js_es6_string.md)
