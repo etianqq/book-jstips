@@ -39,7 +39,7 @@
        { 
           var obj=document.createElement("XXX"); 
           obj.onclick=function(){ 
-            //Even if it's a empty function 
-        } 
-        obj=null; 
+                //Even if it's a empty function 
+            } 
+          obj=null; 
       }
