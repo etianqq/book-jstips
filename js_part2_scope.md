@@ -23,4 +23,4 @@
       var a = 2;
       bar();//	2
 
-Important!!! **事实上JavaScript并不具有动态作用域。它只有词法作用域，简单明了。但是this机制某种程度上很像动态作用域。**
+Important!!! **事实上JavaScript并不具有动态作用域。它只有词法作用域。但是this机制某种程度上很像动态作用域。**
