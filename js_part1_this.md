@@ -12,7 +12,7 @@
 this是在**运行时进行绑定**的，并不是在编写时绑定，它的上下文取决于函数调用时的各种条件。this的绑定和函数声明的位置没有任何关系，只取决于**函数的调用方式**。
 
 ####改变this对象
-```call(),apply(),bind()```
+```call(),apply(),bind(), new Func()```
 
     function foo(){	
         console.log(this.a);
