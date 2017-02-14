@@ -43,7 +43,13 @@ foo.call(obj);	// 2
     * 这个新对象会被执行[[prototype]]连接
     * 这个新对象会绑定到函数调用的```this```
     * 如果函数没有返回其他对象，那么new表达式中的函数调用会自动返回这个新对象 
-
+```
+function foo(a){
+    this.a = a;
+}
+var bar = new foo(2);
+bar.a; // 2    
+```
 ####绑定优先级从高到低
 
 new 操作(```new Obj()```)->显式绑定(```obj.foo.call(obj2)```)->隐式绑定(```obj.foo()```)->默认绑定
