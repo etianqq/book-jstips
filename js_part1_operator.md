@@ -37,8 +37,3 @@
     
     Returns false if its single operand can be converted to true; otherwise, returns true.|
     
-####运算符的优先级
-
-下表按从**最高到最低**的优先级列出JavaScript运算符。具有相同优先级的运算符按从**左至右**的顺序求值:
-
-![](js-priority.png)
