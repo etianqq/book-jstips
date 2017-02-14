@@ -1,4 +1,4 @@
-# this对象
+#this对象
     function foo(){
         var a = 2;
         this.bar();
@@ -50,6 +50,7 @@ function foo(a){
 var bar = new foo(2);
 bar.a; // 2    
 ```
+
 ####绑定优先级从高到低
 
 new 操作(```new Obj()```)->显式绑定(```obj.foo.call(obj2)```)->隐式绑定(```obj.foo()```)->默认绑定
