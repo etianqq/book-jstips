@@ -10,6 +10,7 @@
   * [6.this对象](js_part1_this.md)
   * [7.原型](js_part1_prototype.md)
   * [8.操作符](js_part1_operator.md)
+  * [9.属性描述符](property-descriptor.md)
 * [进阶知识点](js_part2.md)
   * [变量和作用域](js_part2_varaible_scope.md)
   * [变量提升](js-part3-variable.md)
