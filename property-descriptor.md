@@ -43,5 +43,9 @@ obj.a; // 4
 ```
 
 ####存在性
+* ```key in obj```:检查属性key是否在对象obj或其原型链中
+* ```obj.hasOwnProperty('key')```：检查属性key是否在对象obj中（不包含原型链）
+* ```obj.propertyIsEnumerable('key')```：检查属性key是否在对象obj中（不包含原型链）,并且该属性enumerable: true
+* ```Object.keys(obj)```:返回数组，包含所有可枚举的属性（不包含原型链）
 
 
