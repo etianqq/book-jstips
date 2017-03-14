@@ -13,8 +13,34 @@ JavaScript 中的对象是基于原形的。
 参考例子：
 ```
 var book = {
- title: "High Performance JavaScript",
- publisher: "Yahoo! Press"
+    title: "High Performance JavaScript",
+    publisher: "Yahoo! Press"
 };
 alert(book.toString()); //"[object Object]"
 ```
+下图为book对象和book对象继承的原型成员：
+
+![](/assets/prototype1.png)
+
+当 book.toString()被调用时，对成员进行名为“toString”的搜索，首先从对象实例开始，如果 book 没有名为 toString 的成员，那么就转向搜索原形对象，在那里发现了toString()方法并执行它。通过这种方法，booke 可以访问它的原形所拥有的每个属性或方法。
+
+####原型链
+
+看一个例子：
+```
+function Book(title, publisher){
+    this.title = title;
+    this.publisher = publisher;
+}
+Book.prototype.sayTitle = function(){
+    alert(this.title);
+};
+var book1 = new Book("High Performance JavaScript", "Yahoo! Press");
+var book2 = new Book("JavaScript: The Good Parts", "Yahoo! Press");
+alert(book1 instanceof Book); //true
+alert(book1 instanceof Object); //true
+book1.sayTitle(); //"High Performance JavaScript"
+alert(book1.toString()); //"[object Object]"
+```
+
+![](/assets/prototype2.png)
