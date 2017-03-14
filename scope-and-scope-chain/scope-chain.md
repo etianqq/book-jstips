@@ -26,3 +26,6 @@ var total = add(5, 10);
 然后，执行add函数，一个活动对象被创建，并且被加到scope chain顶部。
 由此，执行add函数时，一个两层的作用域链被建立。
 
+![](/scope.png)
+
+
