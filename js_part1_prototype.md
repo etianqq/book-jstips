@@ -44,3 +44,9 @@ alert(book1.toString()); //"[object Object]"
 ```
 
 ![](/assets/prototype2.png)
+
+两个 Book 实例共享同一个原形链。
+每个实例拥有自己的 title 和 publisher 属性，但其他成员均继承自原形。
+当 book1.toString()被调用时，搜索工作必须深入原形链才能找到对象成员“toString”。
+
+因此，**深入原形链越深，搜索的速度就会越慢，效率越低。**
