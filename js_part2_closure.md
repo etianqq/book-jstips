@@ -2,6 +2,17 @@
  # 闭包
 
 理解闭包之前，需要理解函数作用域链！！！
+
+查看下面的例子和图示：
+```
+function assignEvents(){
+   var id = "xdi9592";
+   document.getElementById("save-btn").onclick = function(event){
+    saveDocument(id);
+   };
+}
+```
+
  
  ####闭包定义
 
