@@ -1,7 +1,6 @@
 # Summary
-
+* [前言](js_part1_intro.md)
 * [javascript简明教程](README.md)
-  * [前言](js_part1_intro.md)
   * [1.数据类型](js_part1_dataType.md)
   * [2.运算符](js_part1_calc_operator.md)
   * [3.操作符](js_part1_operator.md)
