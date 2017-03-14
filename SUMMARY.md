@@ -1,6 +1,6 @@
 # Summary
-* [前言](js_intro.md)
-* [javascript简明教程](README.md)
+* [前言](README.md)
+* [基础篇](js_intro.md)
   * [1.数据类型](js_part1_dataType.md)
   * [2.运算符](js_part1_calc_operator.md)
   * [3.操作符](js_part1_operator.md)
@@ -10,7 +10,7 @@
   * [7.函数](js_part1_function.md)
   * [8.this对象](js_part1_this.md)
   * [9.原型链](9.prototype.md)
-* [进阶知识点](js_part2.md)
+* [进阶篇](js_part2.md)
   * [变量和变量赋值](js_part2_varaible_scope.md)
   * [变量提升](js-part3-variable.md)
   * [模块](js_part2_module.md)
