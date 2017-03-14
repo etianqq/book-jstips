@@ -32,7 +32,7 @@ function add(num1, num2){
 var total = add(5, 10);
 ```
 
-![scope chain.jpg](http://upload-images.jianshu.io/upload_images/25750-8bc1fad8334d6a01.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/assets/scope chain 1.jpg)
 
 执行上面的JavaScript代码，但还没有执行add函数时，add函数scope chain只有一个值，指向global object。
 然后，执行add函数，一个活动对象被创建，并且被加到scope chain顶部。
@@ -43,6 +43,32 @@ var total = add(5, 10);
 有两个语句可以改变作用域链，```with```和```try-catch```。
 
 ##### 1) with语句
+
+用with改变函数作用域链：
+```
+function initUI(){
+ with (document){ //avoid!
+     var bd = body,
+     links = getElementsByTagName_r("a"),
+     i = 0,
+     len = links.length;
+     while(i < len){
+         update(links[i++]);
+     }
+     getElementById("go-btn").onclick = function(){
+         start();
+     };
+     bd.className = "active";
+  }
+}
+```
+
+当代码执行到with语句时，执行环境的作用域链临时被改变：**一个新的变量对象被创建**，其包含了参数指定对象的所属属性（如下图，with variable object）。
+
+这时，函数的局部变量都处在第二个作用域链对象中，因此，访问代价更高了。
+
+![](/assets/scope chain 2.png)
+
 
 ##### 2) try-catch语句
 
