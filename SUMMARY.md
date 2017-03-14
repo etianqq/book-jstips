@@ -1,4 +1,5 @@
 # Summary
+
 * [前言](README.md)
 * [基础篇](js_intro.md)
   * [1.数据类型](js_part1_dataType.md)
@@ -11,11 +12,11 @@
   * [8.this对象](js_part1_this.md)
   * [9.原型](js_part1_prototype.md)
 * [进阶篇](js_part2.md)
+  * [词法作用域](js_part2_scope.md)
   * [变量和变量赋值](js_part2_varaible_scope.md)
   * [变量提升](js-part3-variable.md)
   * [模块](js_part2_module.md)
   * [类：面向对象编程](js_part2_OO.md)
-  * [词法作用域](js_part2_scope.md)
   * [垃圾收集](js_part2_garage_collection.md)
   * [js内存泄漏](js_part2_memory_leak.md)
   * [柯里化](js_part2_curry.md)
@@ -24,7 +25,7 @@
     * [作用域链](scope-and-scope-chain/scope-chain.md)
     * [改变作用域链](scope-and-scope-chain/change-scope-chain.md)
     * [动态作用域](scope-and-scope-chain/dong-tai-zuo-yong-yu.md)
-  * [闭包](js_part2_closure.md)   
+  * [闭包](js_part2_closure.md)
 * [ES6](js_es6.md)
   * [数组](js_es6_array.md)
   * [String](js_es6_string.md)
