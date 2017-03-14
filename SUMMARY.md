@@ -26,6 +26,8 @@
     * [改变作用域链](js_part2_scope/change-scope-chain.md)
     * [动态作用域](js_part2_scope/dong-tai-zuo-yong-yu.md)
   * [闭包](js_part2_closure.md)
+* DOM编程
+  * [HTML集合](htmlji-he.md)
 * [ES6](js_es6.md)
   * [数组](js_es6_array.md)
   * [String](js_es6_string.md)
