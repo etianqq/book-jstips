@@ -14,7 +14,7 @@
 * [进阶篇](js_part2.md)
   * [词法作用域](js_part2_scope.md)
   * [变量和变量赋值](js_part2_varaible_scope.md)
-  * [变量提升](js-part3-variable.md)
+  * [变量提升](js-part2-variable.md)
   * [模块](js_part2_module.md)
   * [类：面向对象编程](js_part2_OO.md)
   * [垃圾收集](js_part2_garage_collection.md)
