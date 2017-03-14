@@ -48,7 +48,7 @@
   * [HTML5-History API](js-other-history-api.md)
   * [前端的各种转义](js-other-encoding.md)
   * [Cookie](js-other-cookie.md)
-  * [UI设计模式](ui设计模式.md)
+  * [UI设计模式](js-other-ui设计模式.md)
   * [window.performance](js-other-window.performance.md)
     * [performance.timing](window.performance/performance.timing.md)
     * [performance.memory](window.performance/performance.memory.md)
