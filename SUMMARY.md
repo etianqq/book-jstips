@@ -9,7 +9,7 @@
   * [6.属性描述符](property-descriptor.md)
   * [7.函数](js_part1_function.md)
   * [8.this对象](js_part1_this.md)
-  * [9.原型链](js_part1_prototype.md)
+  * [9.原型](js_part1_prototype.md)
 * [进阶篇](js_part2.md)
   * [变量和变量赋值](js_part2_varaible_scope.md)
   * [变量提升](js-part3-variable.md)
