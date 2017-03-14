@@ -25,6 +25,7 @@
   * [作用域](scope-and-scope-chain.md)
     * [作用域链](scope-and-scope-chain/scope-chain.md)
     * [改变作用域链](scope-and-scope-chain/change-scope-chain.md)
+    * [动态作用域](scope-and-scope-chain/dong-tai-zuo-yong-yu.md)
 * [ES6](js_es6.md)
   * [数组](js_es6_array.md)
   * [String](js_es6_string.md)
