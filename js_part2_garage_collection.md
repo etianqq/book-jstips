@@ -44,3 +44,33 @@ Javascript具有自动垃圾收集机制。
 
 #####3.方法function优化
 只要是动态创建方法的地方，就有可能产生内存垃圾。尽量只创建一个函数对象，多次使用。
+
+#####4. 删除带有事件处理的元素
+从文档中删除带有事件处理程序的元素，如果没有手动删除该元素上的事件，那么原来添加到元素中的事件处理程序极有可能被当作垃圾回收（只是有可能）。参考如下例子：
+```
+<div id="myDiv"> 
+    <input type="button" value="Click Me" id="myBtn"> 
+</div> 
+<script type="text/javascript"> 
+    var btn=document.getElementById("myBtn");  
+    btn.onclick=function(){  
+        document.getElementById("myDiv").innerHTML="Processing…";  
+    }  
+</script> 
+```
+当按钮被从页面中移除时，它还带着一个事件处理程序，在<div>元素中设置innerHTML可以把按钮移走，但事件处理各种仍然与按钮保持着引用联系。
+有的浏览器（尤其是IE）在这种情况下不会作出恰当的处理，它们很有可能会将对元素和事件处理程序的引用都保存在内存中。
+如果你想知道某个元即将被移除，那么最好手工移除事件处理程序。
+
+```
+<div id="myDiv"> 
+<input type="button" value="Click Me" id="myBtn"> 
+</div> 
+<script type="text/javascript"> 
+var btn=document.getElementById("myBtn");  
+btn.onclick=function(){  
+btn.onclick=null;  
+document.getElementById("myDiv").innerHTML="Processing…";  
+}  
+</script> 
+```
