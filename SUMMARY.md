@@ -28,6 +28,7 @@
   * [闭包](js_part2_closure.md)
 * [DOM编程](js-dom.md)
   * [HTML集合](js-dom-html-collection.md)
+  * [遍历DOM](js-dom-traverse.md)
 * [ES6](js_es6.md)
   * [数组](js_es6_array.md)
   * [String](js_es6_string.md)
