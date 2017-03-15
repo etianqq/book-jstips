@@ -9,3 +9,10 @@
 
 ![](/assets/dom selector.png)
 
+####选择器API：querySelectorAll()
+
+建议使用```querySelectorAll```，它查找元素要快很多。优点如下：
+
+1. 返回值为数组
+2. 因此返回的节点不会对应实时的文档结构
+
