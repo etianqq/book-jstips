@@ -16,9 +16,9 @@ HTML集合是用于**存放DOM节点引用**的**类数组**对象；
 
 看下面的例子：
 ```
-var alldivs = document.getElementsByTagName_r('div'); 
+var alldivs = document.getElementsByTagName('div'); 
 for (var i = 0; i < alldivs.length; i++) { 
   document.body.appendChild(document.createElement('div')) 
 }
 ```
-
+该程序会陷入死循环，因为alldivs.length在每次迭代时都会增加。
