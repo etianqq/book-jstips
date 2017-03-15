@@ -67,10 +67,10 @@ Javascript具有自动垃圾收集机制。
 <input type="button" value="Click Me" id="myBtn"> 
 </div> 
 <script type="text/javascript"> 
-var btn=document.getElementById("myBtn");  
-btn.onclick=function(){  
-btn.onclick=null;  
-document.getElementById("myDiv").innerHTML="Processing…";  
-}  
+    var btn=document.getElementById("myBtn");  
+    btn.onclick=function(){  
+        btn.onclick=null;  
+        document.getElementById("myDiv").innerHTML="Processing…";  
+    }  
 </script> 
 ```
