@@ -26,6 +26,7 @@
     * [改变作用域链](js_part2_scope/change-scope-chain.md)
     * [动态作用域](js_part2_scope/dong-tai-zuo-yong-yu.md)
   * [闭包](js_part2_closure.md)
+  * [Ajax](js_part2_ajax.md)
 * [DOM编程](js-dom.md)
   * [HTML集合](js-dom-html-collection.md)
   * [遍历DOM](js-dom-traverse.md)
@@ -47,7 +48,7 @@
   * [代理模式](js-design-pattern.md)
   * [中介者模式](js-pattern-mediator.md)
   * [观察者模式](js-design-observer.md)
-* 其他
+* [其他](js-others.md)
   * [客户端存储](js-other-storage.md)
   * [HTML5-History API](js-other-history-api.md)
   * [前端的各种转义](js-other-encoding.md)
