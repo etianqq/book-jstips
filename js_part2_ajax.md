@@ -50,3 +50,25 @@ JSONP并没有使用XHR对象，它利用script标签发起请求。
 使用场景：
 * 不需要服务端返回数据（服务端可以返回204 No Content）
 * 只能是GET请求
+
+代码：
+```
+var url = '/status_tracker.php'; 
+var params = [ 
+ 'step=2', 
+ 'time=1248027314' 
+]; 
+var beacon = new Image(); 
+beacon.src = url + '?' + params.join('&'); 
+beacon.onload = function() { 
+ if (this.width == 1) { 
+   // Success. 
+ } 
+ else if (this.width == 2) { 
+   // Failure; create another beacon and try again. 
+ } 
+}; 
+beacon.onerror = function() { 
+   // Error; wait a bit, then create another beacon and try again. 
+};
+```
