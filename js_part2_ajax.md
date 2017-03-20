@@ -2,9 +2,9 @@
 
 Ajax，可以通过延迟下载体积较大的资源文件来使的页面加载速度更快（不会阻塞window.onload事件）。
 
-####数据传输
-
 数据传输首推XMLHttpRequest(XHR)，它允许异步发送和接受数据。
+
+####MultiPart XHR
 
 有一种新技术叫做MultiPart XHR，其允许客户端只用一个HTTP请求就可以从服务端取得多个资源。
 关键点：
@@ -29,3 +29,24 @@ function handleJavaScript(data) {
  eval(data); 
 }
 ```
+
+缺点：
+资源不能被浏览器缓存。
+
+####JSONP
+JSONP并没有使用XHR对象，它利用script标签发起请求。
+
+* 优点：支持跨域请求数据
+* 缺点：只能是GET请求；不能设置请求超时处理/请求失败
+
+```
+使用XHR时，GET请求比POST更快（少量数据）。
+一个GET请求只发送一个数据包到服务器。
+一个POST请求至少发送两个数据包，一个装载头信息，另一个装载POST正文。
+```
+
+####信标（beacons）
+类似动态脚本注入。
+使用场景：
+* 不需要服务端返回数据（服务端可以返回204 No Content）
+* 只能是GET请求
