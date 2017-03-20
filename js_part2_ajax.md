@@ -72,3 +72,9 @@ beacon.onerror = function() {
    // Error; wait a bit, then create another beacon and try again. 
 };
 ```
+
+####加速AJAX
+
+* 减少请求数，如使用MXHR
+* 缩短页面加载时间，页面主要内容加载完成后，用Ajax获取次要文件
+* 确保错误代码不会输出给用户，并在服务端处理错误
