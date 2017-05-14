@@ -33,5 +33,3 @@ var reg2 = new RegExp("hello \\w{3,12}",'g');
 |replace|替换与正则表达式匹配的子串。	
 |split|	把字符串分割为字符串数组。
 
-####4. 书写规则
-
