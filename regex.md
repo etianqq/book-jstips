@@ -26,10 +26,32 @@ var reg2 = new RegExp("hello \\w{3,12}",'g');
 
 ####3. 支持正则表达式的 String 对象的方法
 
-|方法|	描述
-|-|-|	
-|search|检索与正则表达式相匹配的值。	
-|match|	找到一个或多个正则表达式的匹配。	
-|replace|替换与正则表达式匹配的子串。	
-|split|	把字符串分割为字符串数组。
-
+* search：在字符串内检索指定的值,匹配成功返回第一个匹配成功的字符串片段开始的位置，否则返回-1
+```
+var reg=/javascript/i;
+console.log('hello Javascript Javascript Javascript'.search(reg));//6
+```	
+* match：在字符串内检索指定的值,匹配成功返回存放匹配结果的数组，否则返回null。如果没有设置全局匹配g，返回的数组只存第一个成功匹配的值。	
+```
+var reg1=/javascript/i;
+var reg2=/javascript/ig;
+console.log('hello Javascript Javascript Javascript'.match(reg1));
+//['Javascript']
+console.log('hello Javascript Javascript Javascript'.match(reg2));
+//['Javascript','Javascript','Javascript']
+```
+* replace：替换与正则表达式匹配的子串，并返回替换后的字符串。在不设置全局匹配g的时候，只替换第一个匹配成功的字符串片段。
+```
+var reg1=/javascript/i;
+var reg2=/javascript/ig;
+console.log('hello Javascript Javascript Javascript'.replace(reg1,'js'));
+//hello js Javascript Javascript
+console.log('hello Javascript Javascript Javascript'.replace(reg2,'js'));
+//hello js js js
+```
+* split：把字符串分割为字符串数组。
+```
+var reg=/1[2,3]8/;
+console.log('hello128Javascript138Javascript178Javascript'.split(reg));
+//['hello','Javascript','Javascript178Javascript']
+```
