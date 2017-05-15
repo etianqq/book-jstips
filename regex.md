@@ -55,3 +55,14 @@ var reg=/1[2,3]8/;
 console.log('hello128Javascript138Javascript178Javascript'.split(reg));
 //['hello','Javascript','Javascript178Javascript']
 ```
+
+字符串的match方法与正则对象的exec方法非常类似：匹配成功返回一个数组，匹配失败返回null。
+
+如果正则表达式带有g修饰符，则该方法与正则对象的exec方法行为不同，会一次性返回所有匹配成功的结果。
+```
+var s = 'abba';
+var r = /a/g;
+
+s.match(r) // ["a", "a"]
+r.exec(s) // ["a"]
+```
