@@ -29,6 +29,7 @@
   * [Ajax](js_part2_ajax.md)
   * [正则表达式](regex.md)
     * [规则](regex/regex-rule.md)
+    * [组匹配](regex/regex-group-match.md)
 * [DOM编程](js-dom.md)
   * [HTML集合](js-dom-html-collection.md)
   * [遍历DOM](js-dom-traverse.md)
