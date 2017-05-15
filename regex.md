@@ -28,7 +28,7 @@ var reg2 = new RegExp("hello \\w{3,12}",'g');
 
 ######3.1 search
 
-在字符串内检索指定的值,匹配成功返回第一个匹配成功的字符串片段开始的位置，否则返回-1
+在字符串内检索指定的值,匹配成功返回第一个匹配成功的字符串片段开始的位置，否则返回-1。
 ```
 var reg=/javascript/i;
 console.log('hello Javascript Javascript Javascript'.search(reg));//6
