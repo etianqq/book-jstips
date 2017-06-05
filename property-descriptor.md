@@ -14,8 +14,11 @@ Object.defineProperty(obj, "b", {
 })
 ```
 注意，当```configurable:false```的时候：
+* 不能修改它的可配置性和可枚举性
 * writable可以由true改为false，但是无法由false改为true
 * 该属性不能被删除
+
+https://segmentfault.com/a/1190000007290020
 
 ####如何设置一个常量
 ```
