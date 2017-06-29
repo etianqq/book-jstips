@@ -24,3 +24,16 @@ POST请求参数通过HTTP的Body传递到服务端，根据Content-Type的chars
 
 JS中，处理URL编码的函数有三个```escape```，```encodeURI```和```encodeURIComponent```。
 
+######1. escape
+
+将ASCII码字母，数字，标点符号``` - _ . ! ~ * ' ( )```之外的其它字符转化成Uicode编码值，并在编码值前加上```%u```。
+
+```
+escape("i am 邱");
+输出：i%20am%20%u90B1
+```
+
+######2. encodeURI
+
+######3. encodeURIComponent
+
