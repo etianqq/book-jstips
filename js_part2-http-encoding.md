@@ -32,8 +32,14 @@ JS中，处理URL编码的函数有三个```escape```，```encodeURI```和```enc
 escape("i am 邱");
 输出：i%20am%20%u90B1
 ```
-
+注意：escape()和unescape()已经从ECMAScript v3标准中删除了，URL的编码可以用```encodeURI```和```encodeURIComponent```来替代。
 ######2. encodeURI
+
+encodeURI()是真正的JS用来对URL编码的函数，它可以将整个URL进行UTF-8编码。
+注意：下面字符不会编码
+* 不会对 ASCII 字母和数字进行编码
+* 不会对ASCII 标点符号进行编码： ```- _ . ! ~ * ' ( )```
+* 不会对 URI 中具有特殊含义的 ASCII 标点符号进行编码：```;/?:@&=+$,#```
 
 ######3. encodeURIComponent
 
