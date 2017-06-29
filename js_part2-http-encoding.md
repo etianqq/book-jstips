@@ -20,7 +20,7 @@ POST请求参数通过HTTP的Body传递到服务端，根据Content-Type的chars
 
 注意：如果JS文件与当前页面的编码格式不一致，那么，JS文件中的中文字符就变成乱码。
 
-######JS的URL编码
+#####JS的URL编码
 
 JS中，处理URL编码的函数有三个```escape```，```encodeURI```和```encodeURIComponent```。
 
