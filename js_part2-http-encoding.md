@@ -47,3 +47,10 @@ encodeURI("http://etianqq.duapp.com?name=邱")
 ```
 ######3. encodeURIComponent
 
+除了下面字符，encodeURIComponent会对所有字符编码。
+* 不会对 ASCII 字母和数字进行编码
+* 不会对ASCII 标点符号进行编码： ```- _ . ! ~ * ' ( )```
+
+此函数通常用于将一个URL放在另一个URL参数中。
+
+
