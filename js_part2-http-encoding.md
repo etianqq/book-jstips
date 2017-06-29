@@ -8,9 +8,9 @@
 
 浏览器编码URL是将非ASCII字符按照某种编码格式编码成16进制数字，并在每个16进制数字前面加上%符号。
 
-GET请求的参数都是附加在URL上面，所以GET请求参数遵循URL编码，使用浏览器默认编码格式编码。
+* GET请求的参数都是附加在URL上面，所以GET请求参数遵循URL编码，使用浏览器默认编码格式编码。
 
-POST请求参数通过HTTP的Body传递到服务端，根据Content-Type的charset编码格式对提交参数编码。
+* POST请求参数通过HTTP的Body传递到服务端，根据Content-Type的charset编码格式对提交参数编码。
 
 用户请求的资源获得成功后，内容通过response返回到客户端浏览器，内容根据Content-Type的charset编码格式进行解码。如果Content-Type没有设置charset，那么，浏览器根据HTML的```<meta charset="UTF-8">```解码。如果这个也没有定义，那么浏览器将使用默认编码来解码。
 
