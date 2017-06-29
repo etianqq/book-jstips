@@ -63,6 +63,7 @@
     * [performance.getEntries](js-other-window.performance/performance.getentries.md)
     * [performance.now](window.performance/performance.now.md)
   * [ESLint](js-other-eslint.md)
+  * [HTTP encoding](http-encoding.md)
 * [Tips](js_part3.md)
   * [为什么用事件委托](js_part3_event_delegate.md)
   * [document.write](js_part3_documentwrite.md)
