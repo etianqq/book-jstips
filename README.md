@@ -8,5 +8,15 @@ JS是运行在客户端的脚本，用户的浏览器就是他的执行平台，
 
 浏览器只是js的其中一种宿主环境，比如flash同样支持js代码，所以flash player也是js的一种宿主环境
 
-Gitbook: [https://www.gitbook.com/book/etianqq/jstips/details](https://www.gitbook.com/book/etianqq/jstips/details)
+Gitbook: [https://etianqq.github.io/book-jstips/](https://etianqq.github.io/book-jstips/)
 
+#### Debug
+
+* `gitbook build`
+* `gitbook serve`
+* 打开 [http://localhost:4000](http://localhost:4000)
+
+#### 发布
+
+* `gitbook build`
+* `npm run deploy`
