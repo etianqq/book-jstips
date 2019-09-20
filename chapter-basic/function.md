@@ -51,12 +51,12 @@ Tips: ```for(var i = 0; i<len; i++){}```
 ```{for(let i = 0; i<len; i++){}}```
 
 ####作用域链
-![](1.png)
+![](/assets/1.png)
 
 
 
 
-![](2.jpg)
+![](/assets/2.jpg)
 
 
 

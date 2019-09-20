@@ -43,4 +43,4 @@ JavaScript 还提供了 位操作符。
 
 下表按从**最高到最低**的优先级列出JavaScript运算符。具有相同优先级的运算符按从**左至右**的顺序求值:
 
-![](js-priority.png)
+![](/assets/js-priority.png)

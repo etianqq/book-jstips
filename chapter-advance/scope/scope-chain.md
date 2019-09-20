@@ -30,6 +30,6 @@ var total = add(5, 10);
 **_附录：
 《JavaScript编程全解 [（日）》一书对“作用域链”的解释：_**
 
-![](/scope.png)
+![](/assets/scope.png)
 
 
