@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>为什么用事件委托 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="documentwrite.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="../js-tips.html" />
     
 
     </head>
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -989,9 +989,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../chapter-tips/event_delegate.html">
+        <li class="chapter active" data-level="1.8.1" data-path="event_delegate.html">
             
-                <a href="../chapter-tips/event_delegate.html">
+                <a href="event_delegate.html">
             
                     
                     为什么用事件委托
@@ -1002,9 +1002,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../chapter-tips/documentwrite.html">
+        <li class="chapter " data-level="1.8.2" data-path="documentwrite.html">
             
-                <a href="../chapter-tips/documentwrite.html">
+                <a href="documentwrite.html">
             
                     
                     document.write
@@ -1015,9 +1015,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../chapter-tips/number-range.html">
+        <li class="chapter " data-level="1.8.3" data-path="number-range.html">
             
-                <a href="../chapter-tips/number-range.html">
+                <a href="number-range.html">
             
                     
                     Number范围
@@ -1028,9 +1028,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../chapter-tips/summary.html">
+        <li class="chapter " data-level="1.8.4" data-path="summary.html">
             
-                <a href="../chapter-tips/summary.html">
+                <a href="summary.html">
             
                     
                     心得
@@ -1041,9 +1041,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.5" data-path="../chapter-tips/practise.html">
+        <li class="chapter " data-level="1.8.5" data-path="practise.html">
             
-                <a href="../chapter-tips/practise.html">
+                <a href="practise.html">
             
                     
                     练习题
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >为什么用事件委托</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x7528;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;">&#x4E3A;&#x4EC0;&#x4E48;&#x7528;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;</h1>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;&#x5F88;&#x591A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;&#x4E8B;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x5B83;&#x4EEC;&#x7684;&#x7236;&#x8282;&#x70B9;&#x800C;&#x5C06;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;&#x7ED9;&#x7236;&#x8282;&#x70B9;&#x6765;&#x89E6;&#x53D1;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E3B;&#x8981;&#x5F97;&#x76CA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x7528;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;&#x7684;&#x597D;&#x5904;&#xFF1A;</p>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;event&#x6765;&#x6279;&#x91CF;&#x5904;&#x7406;&#x5B50;&#x8282;&#x70B9;event</li>
+<li>&#x53EF;&#x4EE5;&#x7ED9;&#x52A8;&#x6001;&#x8282;&#x70B9;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;</li>
+<li>&#x5F53;&#x9875;&#x9762;&#x4E2D;&#x5143;&#x7D20;&#x88AB;&#x79FB;&#x9664;&#x6216;&#x66FF;&#x6362;&#x65F6;&#xFF0C;&#x82E5;&#x5143;&#x7D20;&#x7ED1;&#x5B9A;&#x7684;&#x4E8B;&#x4EF6;&#x4ECD;&#x6CA1;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x5728;IE&#x4E2D;&#x4E0D;&#x4F1A;&#x4F5C;&#x51FA;&#x6070;&#x5F53;&#x5904;&#x7406;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x4F9D;&#x7136;&#x4F1A;&#x4FDD;&#x7559;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x91C7;&#x7528;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;</li>
+</ol>
+
                                 
                                 </section>
                             
@@ -1131,12 +1139,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="../js-tips.html" class="navigation navigation-prev " aria-label="Previous page: Tips">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="documentwrite.html" class="navigation navigation-next " aria-label="Next page: document.write">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1155,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"为什么用事件委托","level":"1.8.1","depth":2,"next":{"title":"document.write","level":"1.8.2","depth":2,"path":"chapter-tips/documentwrite.md","ref":"chapter-tips/documentwrite.md","articles":[]},"previous":{"title":"Tips","level":"1.8","depth":1,"path":"js-tips.md","ref":"js-tips.md","articles":[{"title":"为什么用事件委托","level":"1.8.1","depth":2,"path":"chapter-tips/event_delegate.md","ref":"chapter-tips/event_delegate.md","articles":[]},{"title":"document.write","level":"1.8.2","depth":2,"path":"chapter-tips/documentwrite.md","ref":"chapter-tips/documentwrite.md","articles":[]},{"title":"Number范围","level":"1.8.3","depth":2,"path":"chapter-tips/number-range.md","ref":"chapter-tips/number-range.md","articles":[]},{"title":"心得","level":"1.8.4","depth":2,"path":"chapter-tips/summary.md","ref":"chapter-tips/summary.md","articles":[]},{"title":"练习题","level":"1.8.5","depth":2,"path":"chapter-tips/practise.md","ref":"chapter-tips/practise.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-tips/event_delegate.md","mtime":"2019-09-20T06:45:51.422Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>模块 Modules · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="../js-design.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="symbols.html" />
     
 
     </head>
@@ -588,9 +588,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../chapter-es6/array.html">
+        <li class="chapter " data-level="1.5.1" data-path="array.html">
             
-                <a href="../chapter-es6/array.html">
+                <a href="array.html">
             
                     
                     数组
@@ -601,9 +601,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../chapter-es6/string.html">
+        <li class="chapter " data-level="1.5.2" data-path="string.html">
             
-                <a href="../chapter-es6/string.html">
+                <a href="string.html">
             
                     
                     String
@@ -614,9 +614,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../chapter-es6/function.html">
+        <li class="chapter " data-level="1.5.3" data-path="function.html">
             
-                <a href="../chapter-es6/function.html">
+                <a href="function.html">
             
                     
                     函数
@@ -627,9 +627,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../chapter-es6/assignment.html">
+        <li class="chapter " data-level="1.5.4" data-path="assignment.html">
             
-                <a href="../chapter-es6/assignment.html">
+                <a href="assignment.html">
             
                     
                     解构赋值
@@ -640,9 +640,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../chapter-es6/non_standard_obj.html">
+        <li class="chapter " data-level="1.5.5" data-path="non_standard_obj.html">
             
-                <a href="../chapter-es6/non_standard_obj.html">
+                <a href="non_standard_obj.html">
             
                     
                     非标准库对象
@@ -653,9 +653,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../chapter-es6/symbols.html">
+        <li class="chapter " data-level="1.5.6" data-path="symbols.html">
             
-                <a href="../chapter-es6/symbols.html">
+                <a href="symbols.html">
             
                     
                     Symbols
@@ -666,9 +666,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.7" data-path="../chapter-es6/modules.html">
+        <li class="chapter active" data-level="1.5.7" data-path="modules.html">
             
-                <a href="../chapter-es6/modules.html">
+                <a href="modules.html">
             
                     
                     模块 Modules
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >模块 Modules</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x6A21;&#x5757;-modules">&#x6A21;&#x5757; Modules</h1>
+<p>&#x6BCF;&#x4E00;&#x4E2A;ES6&#x6A21;&#x5757;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;JS&#x4EE3;&#x7801;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6A21;&#x5757;&#x672C;&#x8D28;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x6BB5;&#x811A;&#x672C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7528;module&#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F46;&#x662F;&#x6A21;&#x5757;&#x4E0E;&#x811A;&#x672C;&#x8FD8;&#x662F;&#x6709;&#x4E24;&#x70B9;&#x533A;&#x522B;&#xFF1A;</p>
+<ul>
+<li>&#x5728;ES6&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x65E0;&#x8BBA;&#x4F60;&#x662F;&#x5426;&#x52A0;&#x5165;&#x201C;use strict;&#x201D;&#x8BED;&#x53E5;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6A21;&#x5757;&#x90FD;&#x662F;&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;&#x8FD0;&#x884C;&#x3002;</li>
+<li>&#x5728;&#x6A21;&#x5757;&#x4E2D;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;import&#x548C;export&#x5173;&#x952E;&#x5B57;&#x3002;</li>
+</ul>
+<h4 id="import">import</h4>
+<p><strong>import&#x662F;ES6&#x7684;&#x52A0;&#x8F7D;&#x673A;&#x5236;&#xFF0C;&#x8FD9;&#x79CD;&#x52A0;&#x8F7D;&#x79F0;&#x4E3A;&#x201C;&#x7F16;&#x8BD1;&#x65F6;&#x52A0;&#x8F7D;&#x201D;&#x6216;&#x8005;&#x9759;&#x6001;&#x52A0;&#x8F7D;</strong>&#xFF0C;&#x5373;ES6&#x53EF;&#x4EE5;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5C31;&#x5B8C;&#x6210;&#x6A21;&#x5757;&#x52A0;&#x8F7D;&#xFF0C;&#x6548;&#x7387;&#x8981;&#x6BD4; CommonJS&#x6A21;&#x5757;&#x7684;require&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#x9AD8;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;<strong>require&#x52A0;&#x8F7D;&#x79F0;&#x4E3A;&#x201C;&#x8FD0;&#x884C;&#x65F6;&#x52A0;&#x8F7D;&#x201D;</strong>&#xFF0C;&#x53EA;&#x6709;&#x8FD0;&#x884C;&#x65F6;&#x624D;&#x80FD;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>ES6&#x6A21;&#x5757;&#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF0C;&#x662F;&#x5C3D;&#x91CF;&#x7684;&#x9759;&#x6001;&#x5316;&#xFF0C;&#x4F7F;&#x5F97;&#x7F16;&#x8BD1;&#x65F6;&#x5C31;&#x80FD;&#x786E;&#x5B9A;&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;import&#x7684;&#x52A0;&#x8F7D;&#x673A;&#x5236;&#x4F7F;&#x5F97;&#x9759;&#x6001;&#x5206;&#x6790;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#x7C7B;&#x578B;&#x68C0;&#x9A8C;&#x4EC0;&#x4E48;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x652F;&#x6301;ES6&#x7684;&#x8BED;&#x6CD5;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5EFA;&#x8BAE;&#x7528;import&#x3002;</p>
+<h4 id="exports">exports</h4>
+<pre><code>function cube(x) {
+  return x * x * x;
+}
+const foo = Math.PI + Math.SQRT2;
+export { cube, foo };
+--------------------------------------------
+import { cube, foo } from &apos;my-module&apos;;
+console.log(cube(3)); // 27
+console.log(foo);    // 4.555806215962888
+</code></pre><h4 id="default-exports">Default exports</h4>
+<p>&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#xFF0C;&#x53EA;&#x80FD;&#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3001;&#x4E00;&#x4E2A;&#x7C7B;&#x3001;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;...</p>
+<pre><code>export default function cube(x) {
+return x * x * x;
+}
+-----------------------------------
+import cube from &apos;my-module&apos;;
+console.log(cube(3)); // 27
+</code></pre><h4 id="&#x91CD;&#x547D;&#x540D;import&#x548C;export">&#x91CD;&#x547D;&#x540D;import&#x548C;export</h4>
+<p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x5BFC;&#x51FA;&#x7684;&#x540D;&#x79F0;&#x4F1A;&#x4E0E;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x5176;&#x5B83;&#x540D;&#x79F0;&#x4EA7;&#x751F;&#x51B2;&#x7A81;&#xFF0C;ES6&#x63D0;&#x4F9B;&#x4E86;&#x91CD;&#x547D;&#x540D;:</p>
+<pre><code>// &#x8FD9;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x4F1A;&#x5BFC;&#x51FA;&#x4EE5;`flip`&#x547D;&#x540D;&#x7684;&#x4E1C;&#x897F;&#x3002;
+// &#x8981;&#x540C;&#x65F6;&#x5BFC;&#x5165;&#x4E24;&#x8005;&#xFF0C;&#x6211;&#x4EEC;&#x81F3;&#x5C11;&#x8981;&#x5C06;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7684;&#x540D;&#x79F0;&#x6539;&#x6389;&#x3002;
+import {flip as flipOmelet} from &quot;eggs.js&quot;;
+import {flip as flipHouse} from &quot;real-estate.js&quot;;
+</code></pre><p>&#x5728;&#x5BFC;&#x51FA;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x91CD;&#x547D;&#x540D;:</p>
+<pre><code>function v1() { ... }
+function v2() { ... }
+
+export {
+   v1 as streamV1,
+   v2 as streamV2,
+   v2 as streamLatestVersion
+};
+</code></pre><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export" target="_blank">
+&#x53C2;&#x8003;&#x6587;&#x7AE0;&#xFF1A;mozilla exports</a></p>
+
                                 
                                 </section>
                             
@@ -1131,12 +1176,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="symbols.html" class="navigation navigation-prev " aria-label="Previous page: Symbols">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="../js-design.html" class="navigation navigation-next " aria-label="Next page: 设计模式">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1192,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"模块 Modules","level":"1.5.7","depth":2,"next":{"title":"设计模式","level":"1.6","depth":1,"path":"js-design.md","ref":"js-design.md","articles":[{"title":"工厂模式","level":"1.6.1","depth":2,"path":"chapter-design/factory.md","ref":"chapter-design/factory.md","articles":[]},{"title":"迭代器模式","level":"1.6.2","depth":2,"path":"chapter-design/iterator.md","ref":"chapter-design/iterator.md","articles":[]},{"title":"装饰器模式","level":"1.6.3","depth":2,"path":"chapter-design/decorator.md","ref":"chapter-design/decorator.md","articles":[]},{"title":"策略模式","level":"1.6.4","depth":2,"path":"chapter-design/strategy.md","ref":"chapter-design/strategy.md","articles":[]},{"title":"外观模式","level":"1.6.5","depth":2,"path":"chapter-design/appearance.md","ref":"chapter-design/appearance.md","articles":[]},{"title":"代理模式","level":"1.6.6","depth":2,"path":"chapter-design/pattern.md","ref":"chapter-design/pattern.md","articles":[]},{"title":"中介者模式","level":"1.6.7","depth":2,"path":"chapter-design/mediator.md","ref":"chapter-design/mediator.md","articles":[]},{"title":"观察者模式","level":"1.6.8","depth":2,"path":"chapter-design/observer.md","ref":"chapter-design/observer.md","articles":[]}]},"previous":{"title":"Symbols","level":"1.5.6","depth":2,"path":"chapter-es6/symbols.md","ref":"chapter-es6/symbols.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-es6/modules.md","mtime":"2019-09-20T03:48:05.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

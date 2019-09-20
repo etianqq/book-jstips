@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>3.操作符 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="array.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="calc_operator.html" />
     
 
     </head>
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../chapter-basic/dataType.html">
+        <li class="chapter " data-level="1.2.1" data-path="dataType.html">
             
-                <a href="../chapter-basic/dataType.html">
+                <a href="dataType.html">
             
                     
                     1.数据类型
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../chapter-basic/calc_operator.html">
+        <li class="chapter " data-level="1.2.2" data-path="calc_operator.html">
             
-                <a href="../chapter-basic/calc_operator.html">
+                <a href="calc_operator.html">
             
                     
                     2.运算符
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../chapter-basic/operator.html">
+        <li class="chapter active" data-level="1.2.3" data-path="operator.html">
             
-                <a href="../chapter-basic/operator.html">
+                <a href="operator.html">
             
                     
                     3.操作符
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../chapter-basic/array.html">
+        <li class="chapter " data-level="1.2.4" data-path="array.html">
             
-                <a href="../chapter-basic/array.html">
+                <a href="array.html">
             
                     
                     4.数组
@@ -168,9 +168,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../chapter-basic/object.html">
+        <li class="chapter " data-level="1.2.5" data-path="object.html">
             
-                <a href="../chapter-basic/object.html">
+                <a href="object.html">
             
                     
                     5.对象
@@ -181,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="../chapter-basic/property-descriptor.html">
+        <li class="chapter " data-level="1.2.6" data-path="property-descriptor.html">
             
-                <a href="../chapter-basic/property-descriptor.html">
+                <a href="property-descriptor.html">
             
                     
                     6.属性描述符
@@ -194,9 +194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="../chapter-basic/function.html">
+        <li class="chapter " data-level="1.2.7" data-path="function.html">
             
-                <a href="../chapter-basic/function.html">
+                <a href="function.html">
             
                     
                     7.函数
@@ -207,9 +207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8" data-path="../chapter-basic/this.html">
+        <li class="chapter " data-level="1.2.8" data-path="this.html">
             
-                <a href="../chapter-basic/this.html">
+                <a href="this.html">
             
                     
                     8.this对象
@@ -220,9 +220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="../chapter-basic/prototype.html">
+        <li class="chapter " data-level="1.2.9" data-path="prototype.html">
             
-                <a href="../chapter-basic/prototype.html">
+                <a href="prototype.html">
             
                     
                     9.原型
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >3.操作符</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,97 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="8&#x64CD;&#x4F5C;&#x7B26;">8.&#x64CD;&#x4F5C;&#x7B26;</h1>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x522B;</th>
+<th>&#x64CD;&#x4F5C;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;</td>
+<td>++ /--</td>
+<td>&#x81EA;&#x589E;</td>
+<td>1&#x3001;&#x81EA;&#x589E;&#xFF08;&#x51CF;&#xFF09;&#x6709;&#x524D;&#x7F6E;&#x548C;&#x540E;&#x7F6E;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x524D;&#x7F6E;&#x5148;&#x81EA;&#x589E;&#xFF08;&#x51CF;&#xFF09;&#x518D;&#x53C2;&#x4E0E;&#x5176;&#x5B83;&#x8FD0;&#x7B97;&#xFF0C;&#x540E;&#x7F6E;&#x5148;&#x53C2;&#x4E0E;&#x5176;&#x5B83;&#x8FD0;&#x7B97;&#x518D;&#x81EA;&#x589E;&#xFF08;&#x51CF;&#xFF09;&#x3002;2&#x3001;&#x5728;ES&#x4E2D;&#xFF0C;&#x81EA;&#x589E;&#xFF08;&#x51CF;&#xFF09;&#x4E0D;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x6574;&#x6570;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x4EFB;&#x610F;&#x503C;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x662F;Number&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x4F1A;&#x5148;&#x6309;&#x524D;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x7684;&#x89C4;&#x5219;&#x9690;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;Number&#xFF0C;&#x7136;&#x540E;&#x518D;&#x81EA;&#x589E;&#xFF08;&#x51CF;&#xFF09;&#xFF0C;&#x6B64;&#x65F6;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x4E5F;&#x4F1A;&#x53D8;&#x6210;Number&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>&#x6309;&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;</td>
+<td>~</td>
+<td>&#x6309;&#x4F4D;&#x975E;</td>
+<td>&#x6309;&#x4F4D;&#x53D6;&#x53CD;&#xFF0C;&#x4E5F;&#x5373;&#x8FD4;&#x56DE;&#x53CD;&#x7801;</td>
+</tr>
+<tr>
+<td></td>
+<td>&amp;</td>
+<td>&#x6309;&#x4F4D;&#x4E0E;</td>
+<td>&#x6309;&#x4F4D;&#x5BF9;&#x9F50;&#xFF0C;&#x9010;&#x4F4D;&#x64CD;&#x4F5C;&#xFF0C;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x4F4D;&#x5747;&#x4E3A;1&#x624D;&#x8FD4;&#x56DE;1&#xFF0C;&#x5426;&#x5219;&#x8BE5;&#x4F4D;&#x8FD4;&#x56DE;0&#xFF0C;&#x6700;&#x540E;&#x5C06;&#x6240;&#x6709;&#x4F4D;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x7EC4;&#x5408;&#x8FD4;&#x56DE;</td>
+</tr>
+<tr>
+<td></td>
+<td>\</td>
+<td>&#x6309;&#x4F4D;&#x6216;</td>
+<td>&#x6309;&#x4F4D;&#x5BF9;&#x9F50;&#xFF0C;&#x9010;&#x4F4D;&#x64CD;&#x4F5C;&#xFF0C;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x4F4D;&#x5747;&#x4E3A;0&#x624D;&#x8FD4;&#x56DE;0&#xFF0C;&#x5426;&#x5219;&#x8BE5;&#x4F4D;&#x8FD4;&#x56DE;1&#xFF0C;&#x6700;&#x540E;&#x5C06;&#x6240;&#x6709;&#x4F4D;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x7EC4;&#x5408;&#x8FD4;&#x56DE;</td>
+</tr>
+<tr>
+<td></td>
+<td>^</td>
+<td>&#x6309;&#x4F4D;&#x5F02;&#x6216;</td>
+<td>&#x6309;&#x4F4D;&#x5BF9;&#x9F50;&#xFF0C;&#x9010;&#x4F4D;&#x64CD;&#x4F5C;&#xFF0C;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x4F4D;&#x4E0D;&#x76F8;&#x540C;&#x65F6;&#x8FD4;&#x56DE;1&#xFF0C;&#x5426;&#x5219;&#x8BE5;&#x4F4D;&#x8FD4;&#x56DE;0&#xFF0C;&#x6700;&#x540E;&#x5C06;&#x6240;&#x6709;&#x4F4D;&#x64CD;&#x4F5C;&#x7ED3;&#x679C;&#x7EC4;&#x5408;&#x8FD4;&#x56DE;</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;&lt;</td>
+<td>&#x5DE6;&#x79FB;</td>
+<td>&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x5411;&#x5DE6;&#x79FB;&#x4F4D;&#xFF0C;&#x5DE6;&#x79FB;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7B26;&#x53F7;&#x4F4D;</td>
+</tr>
+<tr>
+<td></td>
+<td>&gt;&gt;</td>
+<td>&#x6709;&#x7B26;&#x53F7;&#x53F3;&#x79FB;</td>
+<td>&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x5411;&#x53F3;&#x79FB;&#x4F4D;&#xFF0C;&#x9AD8;&#x4F4D;&#x4EE5;&#x7B26;&#x5408;&#x4F4D;&#x586B;&#x5145;</td>
+</tr>
+<tr>
+<td></td>
+<td>&gt;&gt;&gt;</td>
+<td>&#x65E0;&#x7B26;&#x53F7;&#x53F3;&#x79FB;</td>
+<td>&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x5411;&#x53F3;&#x79FB;&#x4F4D;&#xFF0C;&#x76F4;&#x63A5;&#x53F3;&#x79FB;&#xFF0C;&#x5BF9;&#x4E8E;&#x6B63;&#x6570;&#xFF0C;&#x7ED3;&#x679C;&#x548C;&gt;&gt;&#x76F8;&#x540C;&#xFF0C;&#x5BF9;&#x4E8E;&#x8D1F;&#x6570;&#xFF0C;&#x4F1A;&#x628A;&#x8D1F;&#x6570;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8865;&#x7801;&#x5F53;&#x6210;&#x6B63;&#x6570;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x7801;&#x5904;&#x7406;</td>
+</tr>
+<tr>
+<td>&#x5176;&#x5B83;&#x64CD;&#x4F5C;&#x7B26;</td>
+<td>()</td>
+<td>&#x5206;&#x7EC4;&#x64CD;&#x4F5C;&#x7B26;</td>
+<td>&#x4E3B;&#x8981;&#x7528;&#x9014;&#xFF1A;1&#x3001;&#x7ED3;&#x5408;&#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;&#x7528;&#x4E8E;&#x8D4B;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF1A;var num = (5,1,4,8,0);&#x8FD9;&#x91CC;num&#x6700;&#x540E;&#x7684;&#x503C;&#x4E3A;0&#x3002;2&#x3001;&#x8F6C;&#x6362;&#x4E3A;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x6BD4;&#x5982;<code>eval(&apos;(&apos;+jsStr+&apos;)&apos;);</code> <code>(function(){}());</code>&#x53C8;&#x6BD4;&#x5982;&#xFF1A;3&#x3001;&#x7528;&#x4E8E;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x3002;&#x6BD4;&#x5982;fn();</td>
+</tr>
+<tr>
+<td></td>
+<td>typeof</td>
+<td>&#x7C7B;&#x578B;&#x64CD;&#x4F5C;&#x7B26;</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#xFF1A;Undefined&#x7C7B;&#x578B;&#x2014;&gt;&apos;undefined&apos;&#x3001;Null&#x7C7B;&#x578B;&#x2014;&gt;&apos;object&apos;&#x3001;Boolean&#x7C7B;&#x578B;&#x2014;&gt;&apos;boolean&apos;&#x3001;Number&#x7C7B;&#x578B;&#x2014;&gt;&#x2018;number&apos;&#x3001;String&#x2014;&gt;&apos;string&apos;&#x3001;&#x5185;&#x7F6E;Function&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x2014;&gt;&apos;function&apos;&#x3001;&#x5176;&#x5B83;Object&#x7C7B;&#x578B;&#x2014;&gt;&apos;object&apos;&#x3002;&#xFF08;&#x6709;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x5B9E;&#x73B0;&#x7565;&#x6709;&#x4E0D;&#x540C;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="and-">&apos;&amp;&amp;&apos;,&apos;||&apos; and &apos;!&apos;</h4>
+<ol>
+<li><p>Logical AND (&amp;&amp;)    </p>
+<p><code>expr1 &amp;&amp; expr2</code></p>
+<p>Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, &amp;&amp; returns true if both operands can be converted to true; otherwise, returns false.</p>
+<p>eg: 0&amp;&amp;1---&gt;0, 1&amp;&amp;2---&gt;2, 1&amp;&amp;true---&gt;false</p>
+</li>
+<li><p>Logical OR (||)    </p>
+<p> <code>expr1 || expr2</code>    </p>
+<p> Returns expr1 if it can be converted to true; otherwise, returns expr2. Thus, when used with Boolean values, || returns true if either operand can be converted to true; if both can be converted to false, returns false.</p>
+<p> 1||2---&gt;1, 0||3---&gt;3, 4||true---&gt;4, 0||true---&gt;true</p>
+</li>
+<li><p>Logical NOT (!)</p>
+<p> <code>!expr</code></p>
+<p> Returns false if its single operand can be converted to true; otherwise, returns true.|</p>
+</li>
+</ol>
+
                                 
                                 </section>
                             
@@ -1131,12 +1221,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="calc_operator.html" class="navigation navigation-prev " aria-label="Previous page: 2.运算符">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="array.html" class="navigation navigation-next " aria-label="Next page: 4.数组">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1237,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.操作符","level":"1.2.3","depth":2,"next":{"title":"4.数组","level":"1.2.4","depth":2,"path":"chapter-basic/array.md","ref":"chapter-basic/array.md","articles":[]},"previous":{"title":"2.运算符","level":"1.2.2","depth":2,"path":"chapter-basic/calc_operator.md","ref":"chapter-basic/calc_operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-basic/operator.md","mtime":"2019-09-20T03:48:05.054Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>HTML集合 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="js-dom-traverse.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="../js-dom.html" />
     
 
     </head>
@@ -530,9 +530,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../chapter-dom/js-dom-html-collection.html">
+        <li class="chapter active" data-level="1.4.1" data-path="js-dom-html-collection.html">
             
-                <a href="../chapter-dom/js-dom-html-collection.html">
+                <a href="js-dom-html-collection.html">
             
                     
                     HTML集合
@@ -543,9 +543,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../chapter-dom/js-dom-traverse.html">
+        <li class="chapter " data-level="1.4.2" data-path="js-dom-traverse.html">
             
-                <a href="../chapter-dom/js-dom-traverse.html">
+                <a href="js-dom-traverse.html">
             
                     
                     遍历DOM
@@ -556,9 +556,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../chapter-dom/js-dom-layout-repain.html">
+        <li class="chapter " data-level="1.4.3" data-path="js-dom-layout-repain.html">
             
-                <a href="../chapter-dom/js-dom-layout-repain.html">
+                <a href="js-dom-layout-repain.html">
             
                     
                     重排和重绘
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >HTML集合</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="html&#x96C6;&#x5408;">HTML&#x96C6;&#x5408;</h1>
+<p>HTML&#x96C6;&#x5408;&#x662F;&#x7528;&#x4E8E;<strong>&#x5B58;&#x653E;DOM&#x8282;&#x70B9;&#x5F15;&#x7528;</strong>&#x7684;<strong>&#x7C7B;&#x6570;&#x7EC4;</strong>&#x5BF9;&#x8C61;&#xFF1B;</p>
+<ul>
+<li>document.getElementsByName() </li>
+<li>document.getElementsByClassName() </li>
+<li>document.getElementsByTagName()</li>
+<li>document.images</li>
+<li>document.links</li>
+<li>document.forms</li>
+<li>document.forms[0].elements</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#x4E24;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x6570;&#x7EC4;</li>
+<li>&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#xFF0C;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5F53;&#x5E95;&#x5C42;&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x5B83;&#x4E5F;&#x4F1A;&#x540C;&#x6B65;&#x66F4;&#x65B0;</li>
+</ol>
+<p>&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>var alldivs = document.getElementsByTagName(&apos;div&apos;); 
+for (var i = 0; i &lt; alldivs.length; i++) { 
+  document.body.appendChild(document.createElement(&apos;div&apos;)) 
+}
+</code></pre><p>&#x8BE5;&#x7A0B;&#x5E8F;&#x4F1A;&#x9677;&#x5165;&#x6B7B;&#x5FAA;&#x73AF;&#xFF0C;&#x56E0;&#x4E3A;alldivs.length&#x5728;&#x6BCF;&#x6B21;&#x8FED;&#x4EE3;&#x65F6;&#x90FD;&#x4F1A;&#x589E;&#x52A0;&#x3002;</p>
+<p><strong>&#x5EFA;&#x8BAE;&#x5C06;&#x7C7B;&#x6570;&#x7EC4;&#x8F6C;&#x4E3A;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x904D;&#x5386;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;&#x904D;&#x5386;&#x6570;&#x7EC4;&#x6BD4;&#x904D;&#x5386;&#x96C6;&#x5408;&#x5FEB;&#x591A;&#x4E86;&#xFF01;</strong></p>
+
                                 
                                 </section>
                             
@@ -1131,12 +1154,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="../js-dom.html" class="navigation navigation-prev " aria-label="Previous page: DOM编程">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="js-dom-traverse.html" class="navigation navigation-next " aria-label="Next page: 遍历DOM">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1170,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTML集合","level":"1.4.1","depth":2,"next":{"title":"遍历DOM","level":"1.4.2","depth":2,"path":"chapter-dom/js-dom-traverse.md","ref":"chapter-dom/js-dom-traverse.md","articles":[]},"previous":{"title":"DOM编程","level":"1.4","depth":1,"path":"js-dom.md","ref":"js-dom.md","articles":[{"title":"HTML集合","level":"1.4.1","depth":2,"path":"chapter-dom/js-dom-html-collection.md","ref":"chapter-dom/js-dom-html-collection.md","articles":[]},{"title":"遍历DOM","level":"1.4.2","depth":2,"path":"chapter-dom/js-dom-traverse.md","ref":"chapter-dom/js-dom-traverse.md","articles":[]},{"title":"重排和重绘","level":"1.4.3","depth":2,"path":"chapter-dom/js-dom-layout-repain.md","ref":"chapter-dom/js-dom-layout-repain.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-dom/js-dom-html-collection.md","mtime":"2019-09-20T03:48:05.044Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

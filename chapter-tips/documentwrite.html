@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>document.write · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="number-range.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="event_delegate.html" />
     
 
     </head>
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -989,9 +989,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../chapter-tips/event_delegate.html">
+        <li class="chapter " data-level="1.8.1" data-path="event_delegate.html">
             
-                <a href="../chapter-tips/event_delegate.html">
+                <a href="event_delegate.html">
             
                     
                     为什么用事件委托
@@ -1002,9 +1002,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../chapter-tips/documentwrite.html">
+        <li class="chapter active" data-level="1.8.2" data-path="documentwrite.html">
             
-                <a href="../chapter-tips/documentwrite.html">
+                <a href="documentwrite.html">
             
                     
                     document.write
@@ -1015,9 +1015,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../chapter-tips/number-range.html">
+        <li class="chapter " data-level="1.8.3" data-path="number-range.html">
             
-                <a href="../chapter-tips/number-range.html">
+                <a href="number-range.html">
             
                     
                     Number范围
@@ -1028,9 +1028,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../chapter-tips/summary.html">
+        <li class="chapter " data-level="1.8.4" data-path="summary.html">
             
-                <a href="../chapter-tips/summary.html">
+                <a href="summary.html">
             
                     
                     心得
@@ -1041,9 +1041,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.5" data-path="../chapter-tips/practise.html">
+        <li class="chapter " data-level="1.8.5" data-path="practise.html">
             
-                <a href="../chapter-tips/practise.html">
+                <a href="practise.html">
             
                     
                     练习题
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >document.write</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="documentwrite">document.write</h1>
+<p>&#x52A0;&#x8F7D;&#x6587;&#x6863;&#x65F6;&#xFF0C;&#x7528;<code>document.write(text)</code>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5F80;&#x6587;&#x6863;&#x91CC;&#x9762;&#x5199;&#x5165;&#x5185;&#x5BB9;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x4F1A;&#x4EE5;HTML&#x7684;&#x5F62;&#x5F0F;&#x88AB;&#x6E32;&#x67D3;&#x3002;</p>
+<pre><code>&lt;script&gt;
+  document.write(&apos;*Hello, there!*&apos;);
+&lt;/script&gt;
+</code></pre><p><code>document.write(text)</code>&#x4E2D;&#x7684;text&#x6CA1;&#x6709;&#x4E25;&#x683C;&#x7684;&#x683C;&#x5F0F;&#x8981;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x975E;&#x6CD5;&#x6807;&#x7B7E;&#x6216;&#x8005;&#x4E0D;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li><code>document.write(text)</code>&#x5E94;&#x8BE5;&#x5F80;&#x4E00;&#x4E2A;&#x672A;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x7684;&#x6587;&#x6863;&#x4E2D;&#x5199;&#x5165;&#x5185;&#x5BB9;&#xFF0C;&#x539F;&#x6587;&#x662F;&#xFF1A;</li>
+</ul>
+<blockquote>
+<p>Both document.write and document.writeln method should output text into an unready (open) document.</p>
+</blockquote>
+<p>&#x5F53;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x6587;&#x6863;&#x6D41;&#x5173;&#x95ED;&#x3002;&#x6B64;&#x65F6;&#x518D;&#x8C03;&#x7528;<code>document.write()</code>&#xFF0C;&#x4F1A;&#x5148;&#x6E05;&#x9664;&#x6587;&#x6863;&#x5185;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x5199;&#x5165;&#x65B0;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x539F;&#x6587;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p>When the page finishes loading, the document becomes closed. An attempt to document.write in it will cause the contents to be erased.</p>
+</blockquote>
+<ul>
+<li>&#x5982;&#x679C;&#x7528;<code>document.write()</code>&#x6765;&#x52A0;&#x8F7D;JS&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x963B;&#x585E;&#x9875;&#x9762;&#x6E32;&#x67D3;&#x3002;</li>
+</ul>
+
                                 
                                 </section>
                             
@@ -1131,12 +1151,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="event_delegate.html" class="navigation navigation-prev " aria-label="Previous page: 为什么用事件委托">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="number-range.html" class="navigation navigation-next " aria-label="Next page: Number范围">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1167,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"document.write","level":"1.8.2","depth":2,"next":{"title":"Number范围","level":"1.8.3","depth":2,"path":"chapter-tips/number-range.md","ref":"chapter-tips/number-range.md","articles":[]},"previous":{"title":"为什么用事件委托","level":"1.8.1","depth":2,"path":"chapter-tips/event_delegate.md","ref":"chapter-tips/event_delegate.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-tips/documentwrite.md","mtime":"2019-09-20T06:45:47.098Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

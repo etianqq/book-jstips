@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>函数 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="assignment.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="string.html" />
     
 
     </head>
@@ -588,9 +588,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../chapter-es6/array.html">
+        <li class="chapter " data-level="1.5.1" data-path="array.html">
             
-                <a href="../chapter-es6/array.html">
+                <a href="array.html">
             
                     
                     数组
@@ -601,9 +601,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../chapter-es6/string.html">
+        <li class="chapter " data-level="1.5.2" data-path="string.html">
             
-                <a href="../chapter-es6/string.html">
+                <a href="string.html">
             
                     
                     String
@@ -614,9 +614,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../chapter-es6/function.html">
+        <li class="chapter active" data-level="1.5.3" data-path="function.html">
             
-                <a href="../chapter-es6/function.html">
+                <a href="function.html">
             
                     
                     函数
@@ -627,9 +627,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../chapter-es6/assignment.html">
+        <li class="chapter " data-level="1.5.4" data-path="assignment.html">
             
-                <a href="../chapter-es6/assignment.html">
+                <a href="assignment.html">
             
                     
                     解构赋值
@@ -640,9 +640,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../chapter-es6/non_standard_obj.html">
+        <li class="chapter " data-level="1.5.5" data-path="non_standard_obj.html">
             
-                <a href="../chapter-es6/non_standard_obj.html">
+                <a href="non_standard_obj.html">
             
                     
                     非标准库对象
@@ -653,9 +653,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../chapter-es6/symbols.html">
+        <li class="chapter " data-level="1.5.6" data-path="symbols.html">
             
-                <a href="../chapter-es6/symbols.html">
+                <a href="symbols.html">
             
                     
                     Symbols
@@ -666,9 +666,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.7" data-path="../chapter-es6/modules.html">
+        <li class="chapter " data-level="1.5.7" data-path="modules.html">
             
-                <a href="../chapter-es6/modules.html">
+                <a href="modules.html">
             
                     
                     模块 Modules
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >函数</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h1>
+<h4 id="1&#x5269;&#x4F59;&#x53C2;&#x6570;&#xFF08;rest-parameters&#xFF09;">1.&#x5269;&#x4F59;&#x53C2;&#x6570;&#xFF08;Rest parameters&#xFF09;</h4>
+<p>&#x5269;&#x4F59;&#x53C2;&#x6570;&#x4F1A;&#x9ED8;&#x8BA4;&#x8F6C;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF08;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x7C7B;&#x6570;&#x7EC4;arguments&#x4E86;&#xFF09;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>console.log(&apos;containsAll:&apos;+ containsAll(&apos;i like banana!&apos;,&quot;banana&quot;, &quot;b&quot;, &quot;nan&quot;));  // containsAll:true
+function containsAll(haystack, ...needles){
+    for(var needle of needles){
+        if (haystack.indexOf(needle)=== -1){
+            return false;
+        }
+    }
+    return true;
+}
+</code></pre><ul>
+<li>&#x53EA;&#x6709;&#x4F4D;&#x4E8E;&#x6700;&#x672B;&#x7684;&#x53C2;&#x6570;&#x53EF;&#x88AB;&#x6807;&#x8BB0;&#x4E3A;&#x5269;&#x4F59;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x4F4D;&#x4E8E;&#x5269;&#x4F59;&#x53C2;&#x6570;&#x4E4B;&#x524D;&#x7684;&#x53C2;&#x6570;&#x4E0E;&#x666E;&#x901A;&#x53C2;&#x6570;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</li>
+<li>&#x6240;&#x6709;&#x7684;&#x989D;&#x5916;&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x653E;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7136;&#x540E;&#x518D;&#x5206;&#x914D;&#x7ED9;&#x5269;&#x4F59;&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x989D;&#x5916;&#x53C2;&#x6570;&#xFF0C;&#x5269;&#x4F59;&#x53C2;&#x6570;&#x5219;&#x4E3A;&#x4E00;&#x4E2A;&#x7A7A;&#x6570;&#x7EC4;&#xFF1B;</li>
+<li>&#x5269;&#x4F59;&#x53C2;&#x6570;&#x4E0D;&#x80FD;&#x88AB;&#x8D4B;&#x503C;&#x4E3A;undefined&#x3002;</li>
+</ul>
+<h4 id="2&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF08;default-parameters&#xFF09;">2.&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF08;Default parameters&#xFF09;</h4>
+<p>&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>animalSentence();   //Lions and tigers and bears! Oh my!
+animalSentence(&apos;cat&apos;, &apos;bear&apos;);    //Lions and cat and bear! Oh my!
+
+function animalSentence(animals2=&quot;tigers&quot;, animals3=&quot;bears&quot;) {
+    console.log(`Lions and ${animals2} and ${animals3}! Oh my!`);
+}
+</code></pre><ul>
+<li>&#x53D6;&#x503C;undefined&#x7684;&#x4F5C;&#x7528;&#x7B49;&#x4E8E;&#x662F;&#x6CA1;&#x6709;&#x4F20;&#x5165;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;animalSentence(undefined, &quot;unicorns&quot;) &#x8FD4;&#x56DE;&#x7684;&#x662F; &quot;Lions and tigers and unicorns! Oh my!&quot;</li>
+<li>&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x7684;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x7B49;&#x540C;&#x4E8E;undefined&#x3002;<code>function func(a=1,b)</code>&#x7B49;&#x4EF7;&#x4E8E;<code>function func(a=1,b=undefined)</code></li>
+</ul>
+<h4 id="3&#x7BAD;&#x5934;&#x51FD;&#x6570;&#xFF08;arrow-functions&#xFF09;">3.&#x7BAD;&#x5934;&#x51FD;&#x6570;&#xFF08;Arrow functions&#xFF09;</h4>
+<p>&#x53EF;&#x4EE5;&#x7701;&#x7565;function, return&#xFF08;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF09;,&#x62EC;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x3002;</p>
+<pre><code>// ES5  
+var total = values.reduce(function (a, b) {  
+  return a + b;  
+}, 0);  
+
+// ES6  
+var total = values.reduce((a, b) =&gt; a + b, 0); 
+
+setTimeout(()=&gt; {
+    console.log(this.name);
+}, 100);
+</code></pre><p><strong>&#x7BAD;&#x5934;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x81EA;&#x5DF1;&#x7684;this&#x503C;&#xFF0C;&#x5176;this&#x503C;&#x662F;&#x6839;&#x636E;&#x5916;&#x5C42;&#xFF08;&#x51FD;&#x6570;&#x6216;&#x8005;&#x5168;&#x5C40;&#xFF09;&#x4F5C;&#x7528;&#x57DF;&#x6765;&#x51B3;&#x5B9A;&#x7684;&#x3002;</strong></p>
+
                                 
                                 </section>
                             
@@ -1131,12 +1176,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="string.html" class="navigation navigation-prev " aria-label="Previous page: String">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="assignment.html" class="navigation navigation-next " aria-label="Next page: 解构赋值">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1192,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"1.5.3","depth":2,"next":{"title":"解构赋值","level":"1.5.4","depth":2,"path":"chapter-es6/assignment.md","ref":"chapter-es6/assignment.md","articles":[]},"previous":{"title":"String","level":"1.5.2","depth":2,"path":"chapter-es6/string.md","ref":"chapter-es6/string.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-es6/function.md","mtime":"2019-09-20T06:36:42.830Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

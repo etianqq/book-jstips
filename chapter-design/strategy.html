@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>performance.now · GitBook</title>
+        <title>策略模式 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter-others/eslint.html" />
+    <link rel="next" href="appearance.html" />
     
     
-    <link rel="prev" href="../chapter-others/window.performance/performance.getentries.html" />
+    <link rel="prev" href="decorator.html" />
     
 
     </head>
@@ -698,9 +698,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../chapter-design/factory.html">
+        <li class="chapter " data-level="1.6.1" data-path="factory.html">
             
-                <a href="../chapter-design/factory.html">
+                <a href="factory.html">
             
                     
                     工厂模式
@@ -711,9 +711,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../chapter-design/iterator.html">
+        <li class="chapter " data-level="1.6.2" data-path="iterator.html">
             
-                <a href="../chapter-design/iterator.html">
+                <a href="iterator.html">
             
                     
                     迭代器模式
@@ -724,9 +724,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" data-path="../chapter-design/decorator.html">
+        <li class="chapter " data-level="1.6.3" data-path="decorator.html">
             
-                <a href="../chapter-design/decorator.html">
+                <a href="decorator.html">
             
                     
                     装饰器模式
@@ -737,9 +737,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.4" data-path="../chapter-design/strategy.html">
+        <li class="chapter active" data-level="1.6.4" data-path="strategy.html">
             
-                <a href="../chapter-design/strategy.html">
+                <a href="strategy.html">
             
                     
                     策略模式
@@ -750,9 +750,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.5" data-path="../chapter-design/appearance.html">
+        <li class="chapter " data-level="1.6.5" data-path="appearance.html">
             
-                <a href="../chapter-design/appearance.html">
+                <a href="appearance.html">
             
                     
                     外观模式
@@ -763,9 +763,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.6" data-path="../chapter-design/pattern.html">
+        <li class="chapter " data-level="1.6.6" data-path="pattern.html">
             
-                <a href="../chapter-design/pattern.html">
+                <a href="pattern.html">
             
                     
                     代理模式
@@ -776,9 +776,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.7" data-path="../chapter-design/mediator.html">
+        <li class="chapter " data-level="1.6.7" data-path="mediator.html">
             
-                <a href="../chapter-design/mediator.html">
+                <a href="mediator.html">
             
                     
                     中介者模式
@@ -789,9 +789,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.8" data-path="../chapter-design/observer.html">
+        <li class="chapter " data-level="1.6.8" data-path="observer.html">
             
-                <a href="../chapter-design/observer.html">
+                <a href="observer.html">
             
                     
                     观察者模式
@@ -939,9 +939,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6.4" data-path="performance.now.html">
+        <li class="chapter " data-level="1.7.6.4" data-path="../window.performance/performance.now.html">
             
-                <a href="performance.now.html">
+                <a href="../window.performance/performance.now.html">
             
                     
                     performance.now
@@ -1089,7 +1089,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >performance.now</a>
+        <a href=".." >策略模式</a>
     </h1>
 </div>
 
@@ -1104,7 +1104,103 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x7B56;&#x7565;&#x6A21;&#x5F0F;">&#x7B56;&#x7565;&#x6A21;&#x5F0F;</h1>
+<p>&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x9009;&#x62E9;&#x7B97;&#x6CD5;&#x3002;</p>
+<p>&#x5BF9;&#x5916;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x4F46;&#x662F;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x6267;&#x884C;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#x3002;</p>
+<pre><code>var validator = {
+
+  // all available checks
+  types: {},
+
+  // error messages in the current 
+  // validation session
+  messages: [],
+
+  // current validation config
+  // name: validation type
+  config: {},    
+
+  // the interface method
+  // `data` is key =&gt; value pairs 
+  validate: function (data) {
+
+      var i, msg, type, checker, result_ok;
+
+      // reset all messages
+      this.messages = [];
+
+      for (i in data) {
+
+          if (data.hasOwnProperty(i)) {
+
+              type = this.config[i];
+              checker = this.types[type];
+
+              if (!type) {
+                  continue; // no need to validate
+              }
+              if (!checker) { // uh-oh
+                  throw {
+                      name: &quot;ValidationError&quot;,
+                      message: &quot;No handler to validate type &quot; + type
+                  };
+              }
+
+              result_ok = checker.validate(data[i]);
+              if (!result_ok) {
+                  msg = &quot;Invalid value for *&quot; + i + &quot;*, &quot; + checker.instructions;
+                  this.messages.push(msg);
+              }
+          }
+      }
+      return this.hasErrors();
+  },
+
+  // helper
+  hasErrors: function () {
+      return this.messages.length !== 0;
+  }
+};
+
+validator.types.isNonEmpty = {
+    validate: function (value) {
+        return !!value;
+    },
+    instructions: &quot;the value cannot be empty&quot;
+};
+
+validator.types.isNumber = {
+    validate: function (value) {
+        return !isNaN(Number(value));
+    },
+    instructions: &quot;the value can only be a valid number, e.g. 1, 3.14 or 2010&quot;
+};
+
+validator.types.isAlphaNum = {
+    validate: function (value) {
+        return !String(value).replace(/[a-z0-9]/ig, &quot;&quot;).length;
+    },
+    instructions: &quot;the value can only contain characters and numbers, no special symbols&quot;
+};
+
+validator.config = {
+    first_name: &apos;isNonEmpty&apos;,
+    age: &apos;isNumber&apos;,
+    username: &apos;isAlphaNum&apos;
+};
+
+// example codes
+var data = {
+    first_name: &quot;Super&quot;,
+    last_name: &quot;Man&quot;,
+    age: &quot;unknown&quot;,
+    username: &quot;o_O&quot;
+};
+validator.validate(data);
+if (validator.hasErrors()) {
+    console.log(validator.messages.join(&quot;\n&quot;));
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -1131,12 +1227,12 @@
 
             
                 
-                <a href="../chapter-others/window.performance/performance.getentries.html" class="navigation navigation-prev " aria-label="Previous page: performance.getEntries">
+                <a href="decorator.html" class="navigation navigation-prev " aria-label="Previous page: 装饰器模式">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter-others/eslint.html" class="navigation navigation-next " aria-label="Next page: ESLint">
+                <a href="appearance.html" class="navigation navigation-next " aria-label="Next page: 外观模式">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1147,7 +1243,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"performance.now","level":"1.7.6.4","depth":3,"next":{"title":"ESLint","level":"1.7.7","depth":2,"path":"chapter-others/eslint.md","ref":"chapter-others/eslint.md","articles":[]},"previous":{"title":"performance.getEntries","level":"1.7.6.3","depth":3,"path":"chapter-others/window.performance/performance.getentries.md","ref":"chapter-others/window.performance/performance.getentries.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"window.performance/performance.now.md","mtime":"2019-09-20T03:48:05.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"策略模式","level":"1.6.4","depth":2,"next":{"title":"外观模式","level":"1.6.5","depth":2,"path":"chapter-design/appearance.md","ref":"chapter-design/appearance.md","articles":[]},"previous":{"title":"装饰器模式","level":"1.6.3","depth":2,"path":"chapter-design/decorator.md","ref":"chapter-design/decorator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-design/strategy.md","mtime":"2019-09-20T06:39:42.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T06:57:38.553Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
