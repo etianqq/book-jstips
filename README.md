@@ -8,7 +8,16 @@ JS是运行在客户端的脚本，用户的浏览器就是他的执行平台，
 
 浏览器只是js的其中一种宿主环境，比如flash同样支持js代码，所以flash player也是js的一种宿主环境
 
+#### 电子书
+
 Gitbook: [https://etianqq.github.io/book-jstips/](https://etianqq.github.io/book-jstips/)
+
+其他书籍：
+
+* [HTTP讲义](https://etianqq.github.io/book-http/)
+* [Node讲义](https://etianqq.github.io/book-node/)
+* [VUE2.0讲义](https://etianqq.github.io/book-vue2/)
+* [Angular 1.0讲义](https://etianqq.github.io/book-angular/)
 
 #### Debug
 
