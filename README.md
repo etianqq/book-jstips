@@ -12,13 +12,6 @@ JS是运行在客户端的脚本，用户的浏览器就是他的执行平台，
 
 Gitbook: [https://etianqq.github.io/book-jstips/](https://etianqq.github.io/book-jstips/)
 
-其他书籍：
-
-* [HTTP讲义](https://etianqq.github.io/book-http/)
-* [Node讲义](https://etianqq.github.io/book-node/)
-* [VUE2.0讲义](https://etianqq.github.io/book-vue2/)
-* [Angular 1.0讲义](https://etianqq.github.io/book-angular/)
-
 #### Debug
 
 * `gitbook build`
