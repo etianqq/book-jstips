@@ -7,3 +7,4 @@
 这些新特性有为了提供便利而设计的功能，如arrow functions（箭头函数）和string interpolation（字符串插值）。也有完全崭新的概念，比如proxies（代理）和generators（生成器）。
 
 ES6将会改变你编写JS的方式。
+
