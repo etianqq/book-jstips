@@ -57,7 +57,7 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
             return this.x * this.y;
         }
     };
-
+    
     p.r = 4;
     p.s = 5;
     console.log(p.r);  //12
@@ -69,7 +69,7 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
 从ES5开始，所有的属性都具备了属性描述符。
 
     var myObject={	
-		a:2
+    	a:2
     };
     Object.getOwnPropertyDescriptor(myObject,"a");	
     //	{
@@ -78,26 +78,26 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
     //	  enumerable:	true, //是否在for...in循环中出现
     //	  configurable:	true //修改一个不可配置的属性描述符会出错
     //	}
-    
+
 在创建普通属性时属性描述符会使用默认值，我们也可以使用Object.defineProperty(..)来添加
 一个新属性或者修改一个已有属性（如果它是configurable）并对特性进行设置。
 
     var myObject = {};
     Object.defineProperty( myObject,"a",{
-			value: 2,
-			writable: false,	
-			configurable: true,	
-			enumerable: true
+    		value: 2,
+    		writable: false,	
+    		configurable: true,	
+    		enumerable: true
     }	);	
     myObject.a = 3;
     myObject.a;	// 2
-    
+
 如果只定义value，那么其他属性特性为false。
 
     var o ={};
     Object.defineProperty(o,'x'{value:1});
     Object.getOwnPropertyDescriptor(o,'x');
-
+    
     ==>Object {value: 1, writable: false, enumerable: false, configurable: false}
 
 使用场景，比如声明一个常量。
@@ -107,3 +107,4 @@ JavaScript 中的对象可以简单理解成“名称-值”对，有两种简�
 
 ```Object.freeze(..)```会创建一个冻结对象，这个方法实际上会在一个现有对象上调
 用Object.seal(..)并把所有“数据访问”属性标记为writable:false，这样就无法修改它们的值。
+
