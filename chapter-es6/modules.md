@@ -5,14 +5,17 @@
 * 在ES6模块中，无论你是否加入“use strict;”语句，默认情况下模块都是在严格模式下运行。
 * 在模块中你可以使用import和export关键字。
 
-####import
+#### 语法
+
+##### 1. import
+
 **import是ES6的加载机制，这种加载称为“编译时加载”或者静态加载**，即ES6可以在编译时就完成模块加载，效率要比 CommonJS模块的require加载方式高。
 
 注意：**require加载称为“运行时加载”**，只有运行时才能得到这个对象。
 
 ES6模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系。import的加载机制使得静态分析成为可能，例如类型检验什么的，所以在支持ES6的语法情况下，建议用import。
 
-####exports
+##### 2. exports
 
 ```
 function cube(x) {
@@ -25,7 +28,7 @@ import { cube, foo } from 'my-module';
 console.log(cube(3)); // 27
 console.log(foo);    // 4.555806215962888
 ```
-####Default exports
+##### 3. Default exports
 
 默认导出，只能导出一个函数、一个类、一个对象字面量...
 
@@ -37,7 +40,8 @@ return x * x * x;
 import cube from 'my-module';
 console.log(cube(3)); // 27
 ```
-####重命名import和export
+##### 4. 重命名import和export
+
 有时候，导出的名称会与你需要使用的其它名称产生冲突，ES6提供了重命名:
 ```
 // 这两个模块都会导出以`flip`命名的东西。
@@ -71,6 +75,13 @@ export {
   * 变量不允许被重新绑定，import 的模块名只能是字符串常量，即不可以动态确定依赖
 
 这样的限制在语言层面带来的便利之一是：我们可以通过作用域分析，分析出代码里变量所属的作用域以及它们之间的引用关系，进而可以推导出变量和导入依赖变量的引用关系，在没有明显引用时，就可以进行去冗余。
+
+#### ES 的 export 和 export default
+
+ES 模块化导出有 export 和 export default 两种。这里我们建议减少使用 export default 导出，原因是
+
+* export default 导出整体对象结果，不利于 tree shaking 进行分析；
+* export default导出的结果可以随意命名变量，不利于团队统一管理。
 
 
 
