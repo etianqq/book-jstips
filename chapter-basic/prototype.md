@@ -50,3 +50,15 @@ alert(book1.toString()); //"[object Object]"
 当 book1.toString()被调用时，搜索工作必须深入原形链才能找到对象成员“toString”。
 
 因此，**深入原形链越深，搜索的速度就会越慢，效率越低。**
+
+#### Object.create()原型继承
+
+`Object.create`方法可以用下面的代码代替。
+
+```
+Object.create = function (obj) {
+    function F() {}
+    F.prototype = obj;
+    return new F();
+  };
+```
