@@ -1,6 +1,4 @@
-
-
-# 练习题
+## JS 基础练习题
 
 * event loop: https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/7
 

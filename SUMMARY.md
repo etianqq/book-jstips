@@ -71,6 +71,8 @@
   * [2.document.write](chapter-tips/documentwrite.md)
   * [3.Number范围](chapter-tips/number-range.md)
   * [4.心得](chapter-tips/summary.md)
-  * [5.练习题](chapter-tips/practise.md)
-  * [6.react 练习题](chapter-tips/practise-react.md)
+* [练习题]()
+  * [1.ES5](chapter-practise/es5.md)
+  * [2.ES6](chapter-practise/es6.md)
+  * [3.react](chapter-practise/react.md)
 
