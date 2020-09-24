@@ -144,3 +144,17 @@ promise2.then((res) => {
 })
 console.log('script end')
 ```
+
+#### 继承
+
+```
+function Bar() {
+  this.bar = 42;
+}
+Bar.answer = function() {
+  return 42;
+};
+Bar.prototype.print = function() {
+  console.log(this.bar);
+};
+```
