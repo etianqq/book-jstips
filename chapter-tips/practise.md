@@ -2,6 +2,8 @@
 
 # 练习题
 
+* event loop: https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/7
+
 #### 第1题
 
     console.log(a);
