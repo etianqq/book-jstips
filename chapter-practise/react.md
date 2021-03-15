@@ -41,3 +41,19 @@ class TestView extends React.Component {
 export default TestView;
 
 ```
+
+#### 2. hooks
+ 
+```
+const [modelStatus, setModelStatus] =useState("");
+
+function statusHandleChange(val) {
+        setModelStatus(val);
+        search();
+    }
+
+function search() {
+	console.log(modelStatus);  
+	props.callApi(modelStatus);
+}
+```
